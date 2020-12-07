@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Dec  7 16:00:28 2020
+# Process ID: 17424
+# Current directory: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/synth_1
+# Command line: vivado.exe -log ethernet_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ethernet_test.tcl
+# Log file: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/synth_1/ethernet_test.vds
+# Journal file: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ethernet_test.tcl -notrace
+Command: synth_design -top ethernet_test -part xc7a35tftg256-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16820 
+ERROR: [Synth 8-2715] syntax error near UDP0 [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:334]
+ERROR: [Synth 8-2715] syntax error near else [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:338]
+INFO: [Synth 8-2350] module ethernet_test ignored due to previous errors [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:7]
+Failed to read verilog 'C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v'
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  7 16:00:55 2020...

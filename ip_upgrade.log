@@ -1,0 +1,142 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Nov 25 11:00:30 2020
+| Host         : DESKTOP-2ULHKU6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tftg256-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'multiply'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of multiply (xilinx.com:ip:floating_point:7.1 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Nov 25 11:00:04 2020
+| Host         : DESKTOP-2ULHKU6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tftg256-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fixed_to_float'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of fixed_to_float (xilinx.com:ip:floating_point:7.1 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Nov 25 10:59:49 2020
+| Host         : DESKTOP-2ULHKU6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tftg256-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ram'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ram (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Nov 24 16:39:42 2020
+| Host         : KNOCKER-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ram'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ram (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Nov 24 16:39:28 2020
+| Host         : KNOCKER-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'multiply'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of multiply (xilinx.com:ip:floating_point:7.1) from (Rev. 5) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Nov 24 16:39:24 2020
+| Host         : KNOCKER-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fixed_to_float'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fixed_to_float (xilinx.com:ip:floating_point:7.1) from (Rev. 5) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Nov 24 16:38:41 2020
+| Host         : KNOCKER-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_wiz_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of clk_wiz_0 from xilinx.com:ip:clk_wiz:5.4 (Rev. 3) to xilinx.com:ip:clk_wiz:6.0 (Rev. 2)
+

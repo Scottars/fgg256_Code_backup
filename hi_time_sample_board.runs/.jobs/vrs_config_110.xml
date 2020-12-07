@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="clk_wiz_0_synth_1" LaunchDir="D:/Master work/Wangsai/Clock_pro/AD/hi_time_sample_board -backup/hi_time_sample_board.runs/clk_wiz_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ram_synth_1" LaunchDir="D:/Master work/Wangsai/Clock_pro/AD/hi_time_sample_board -backup/hi_time_sample_board.runs/ram_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fixed_to_float_synth_1" LaunchDir="D:/Master work/Wangsai/Clock_pro/AD/hi_time_sample_board -backup/hi_time_sample_board.runs/fixed_to_float_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="multiply_synth_1" LaunchDir="D:/Master work/Wangsai/Clock_pro/AD/hi_time_sample_board -backup/hi_time_sample_board.runs/multiply_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/Master work/Wangsai/Clock_pro/AD/hi_time_sample_board -backup/hi_time_sample_board.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="clk_wiz_0_synth_1"/>
+		<Parent Id="ram_synth_1"/>
+		<Parent Id="fixed_to_float_synth_1"/>
+		<Parent Id="multiply_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

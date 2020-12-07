@@ -1,0 +1,1168 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Dec  2 20:50:26 2020
+# Process ID: 17100
+# Current directory: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5452 C:\Users\Scottar\Desktop\slave_relateive\fgg256_plus_ethernet\hi_time_sample_board.xpr
+# Log file: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/vivado.log
+# Journal file: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Scottar/Desktop/slave_relateive/Try_ltc9200_ila_basedon_exampleHS/name.tcl'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 677.098 ; gain = 93.703
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1135.512 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1681.883 ; gain = 546.371
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+ERROR: [Labtools 27-3412] Mismatch between the design programmed into the device 'xc7a35t' (JTAG device index = '0'
+ and the probes file(s) 'C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx'.
+ The hw_probe 'ad1_data_IBUF' in the probes file has port index '8'. This port location for the ILA core at location (uuid_23E7D65A79BC59F7BC47406C1714DFAE), does not support a data probe.
+.
+Resolution: 
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the JTAG clock frequency is 2.5x times slower than the frequency of the clock connected to your debug hub.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+ERROR: [Labtools 27-3412] Mismatch between the design programmed into the device 'xc7a35t' (JTAG device index = '0'
+ and the probes file(s) 'C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx'.
+ The hw_probe 'ad1_data_IBUF' in the probes file has port index '8'. This port location for the ILA core at location (uuid_23E7D65A79BC59F7BC47406C1714DFAE), does not support a data probe.
+.
+Resolution: 
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the JTAG clock frequency is 2.5x times slower than the frequency of the clock connected to your debug hub.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Dec  2 20:53:55 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/synth_1/runme.log
+[Wed Dec  2 20:53:55 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1758.340 ; gain = 7.828
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210512180081.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+set_property PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/output_reserve_bit/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/output_reserve_bit/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/output_reserve_bit/ethernet_test_216bit_2ads_normalwork.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+ERROR: [Labtools 27-3412] Mismatch between the design programmed into the device 'xc7a35t' (JTAG device index = '0'
+ and the probes file(s) 'C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/output_reserve_bit/ethernet_test.ltx'.
+ The hw_probe 'ad1_data_IBUF' in the probes file has port index '19'. This port location for the ILA core at location (uuid_23E7D65A79BC59F7BC47406C1714DFAE), does not support a data probe.
+.
+Resolution: 
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the JTAG clock frequency is 2.5x times slower than the frequency of the clock connected to your debug hub.
+set_property PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/output_reserve_bit/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/output_reserve_bit/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/output_reserve_bit/ethernet_test_216bit_2ads_normalwork.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-3222] Mismatch between the design programmed into the device xc7a35t (JTAG device index = 0) and the probes file(s) C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/output_reserve_bit/ethernet_test.ltx.
+ The hw_probe  in the probes file has port index 32. This port does not exist in the ILA core at location (uuid_23E7D65A79BC59F7BC47406C1714DFAE).
+set_property PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/output_reserve_bit/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/output_reserve_bit/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/output_reserve_bit/ethernet_test_216bit_2ads_normalwork.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1763.875 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-3222] Mismatch between the design programmed into the device xc7a35t (JTAG device index = 0) and the probes file(s) C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/output_reserve_bit/ethernet_test.ltx.
+ The hw_probe  in the probes file has port index 32. This port does not exist in the ILA core at location (uuid_23E7D65A79BC59F7BC47406C1714DFAE).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/output_reserve_bit/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/output_reserve_bit/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/output_reserve_bit/ethernet_test_216bit_2ads_normalwork.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+ERROR: [Labtools 27-3412] Mismatch between the design programmed into the device 'xc7a35t' (JTAG device index = '0'
+ and the probes file(s) 'C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/output_reserve_bit/ethernet_test.ltx'.
+ The hw_probe 'ad1_data_IBUF' in the probes file has port index '19'. This port location for the ILA core at location (uuid_23E7D65A79BC59F7BC47406C1714DFAE), does not support a data probe.
+.
+Resolution: 
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the JTAG clock frequency is 2.5x times slower than the frequency of the clock connected to your debug hub.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Dec  2 21:04:30 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/synth_1/runme.log
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+INFO: [Common 17-14] Message 'Xicom 50-38' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tftg256-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'pll_unit'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/fixed_to_float/fixed_to_float.dcp' for cell 'ltc2290/u1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/multiply/multiply.dcp' for cell 'ltc2290/u3'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/ram/ram.dcp' for cell 'ram_store/ram_inst2'
+INFO: [Netlist 29-17] Analyzing 158 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'pll_unit/inst'
+Finished Parsing XDC File [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'pll_unit/inst'
+Parsing XDC File [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'pll_unit/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2576.828 ; gain = 507.492
+Finished Parsing XDC File [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'pll_unit/inst'
+Parsing XDC File [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc]
+WARNING: [Vivado 12-584] No ports matched 'e_txer'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'e_txer'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'e_txer'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2581.961 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 2669.559 ; gain = 881.512
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 2048 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list e_gtxc_OBUF_BUFG ]]
+set_property port_width 10 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {ram_store/chb_addr[0]} {ram_store/chb_addr[1]} {ram_store/chb_addr[2]} {ram_store/chb_addr[3]} {ram_store/chb_addr[4]} {ram_store/chb_addr[5]} {ram_store/chb_addr[6]} {ram_store/chb_addr[7]} {ram_store/chb_addr[8]} {ram_store/chb_addr[9]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 3 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {ltc2290/state[0]} {ltc2290/state[1]} {ltc2290/state[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {ram_store/cnt[0]} {ram_store/cnt[1]} {ram_store/cnt[2]} {ram_store/cnt[3]} {ram_store/cnt[4]} {ram_store/cnt[5]} {ram_store/cnt[6]} {ram_store/cnt[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 4 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {ram_store/state[0]} {ram_store/state[1]} {ram_store/state[2]} {ram_store/state[3]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 10 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {ram_store/cha_addr[0]} {ram_store/cha_addr[1]} {ram_store/cha_addr[2]} {ram_store/cha_addr[3]} {ram_store/cha_addr[4]} {ram_store/cha_addr[5]} {ram_store/cha_addr[6]} {ram_store/cha_addr[7]} {ram_store/cha_addr[8]} {ram_store/cha_addr[9]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {ram_store/ts_cnt[0]} {ram_store/ts_cnt[1]} {ram_store/ts_cnt[2]} {ram_store/ts_cnt[3]} {ram_store/ts_cnt[4]} {ram_store/ts_cnt[5]} {ram_store/ts_cnt[6]} {ram_store/ts_cnt[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 10 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {ram_rd_addr[0]} {ram_rd_addr[1]} {ram_rd_addr[2]} {ram_rd_addr[3]} {ram_rd_addr[4]} {ram_rd_addr[5]} {ram_rd_addr[6]} {ram_rd_addr[7]} {ram_rd_addr[8]} {ram_rd_addr[9]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {ram_rd_data[0]} {ram_rd_data[1]} {ram_rd_data[2]} {ram_rd_data[3]} {ram_rd_data[4]} {ram_rd_data[5]} {ram_rd_data[6]} {ram_rd_data[7]} {ram_rd_data[8]} {ram_rd_data[9]} {ram_rd_data[10]} {ram_rd_data[11]} {ram_rd_data[12]} {ram_rd_data[13]} {ram_rd_data[14]} {ram_rd_data[15]} {ram_rd_data[16]} {ram_rd_data[17]} {ram_rd_data[18]} {ram_rd_data[19]} {ram_rd_data[20]} {ram_rd_data[21]} {ram_rd_data[22]} {ram_rd_data[23]} {ram_rd_data[24]} {ram_rd_data[25]} {ram_rd_data[26]} {ram_rd_data[27]} {ram_rd_data[28]} {ram_rd_data[29]} {ram_rd_data[30]} {ram_rd_data[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 3 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list {ram_state[0]} {ram_state[1]} {ram_state[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list {ram_switch_i[0]} {ram_switch_i[1]} {ram_switch_i[2]} {ram_switch_i[3]} {ram_switch_i[4]} {ram_switch_i[5]} {ram_switch_i[6]} {ram_switch_i[7]} {ram_switch_i[8]} {ram_switch_i[9]} {ram_switch_i[10]} {ram_switch_i[11]} {ram_switch_i[12]} {ram_switch_i[13]} {ram_switch_i[14]} {ram_switch_i[15]} {ram_switch_i[16]} {ram_switch_i[17]} {ram_switch_i[18]} {ram_switch_i[19]} {ram_switch_i[20]} {ram_switch_i[21]} {ram_switch_i[22]} {ram_switch_i[23]} {ram_switch_i[24]} {ram_switch_i[25]} {ram_switch_i[26]} {ram_switch_i[27]} {ram_switch_i[28]} {ram_switch_i[29]} {ram_switch_i[30]} {ram_switch_i[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list {cha_data[0]} {cha_data[1]} {cha_data[2]} {cha_data[3]} {cha_data[4]} {cha_data[5]} {cha_data[6]} {cha_data[7]} {cha_data[8]} {cha_data[9]} {cha_data[10]} {cha_data[11]} {cha_data[12]} {cha_data[13]} {cha_data[14]} {cha_data[15]} {cha_data[16]} {cha_data[17]} {cha_data[18]} {cha_data[19]} {cha_data[20]} {cha_data[21]} {cha_data[22]} {cha_data[23]} {cha_data[24]} {cha_data[25]} {cha_data[26]} {cha_data[27]} {cha_data[28]} {cha_data[29]} {cha_data[30]} {cha_data[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 12 [get_debug_ports u_ila_0/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list {ad1_data_IBUF[0]} {ad1_data_IBUF[1]} {ad1_data_IBUF[2]} {ad1_data_IBUF[3]} {ad1_data_IBUF[4]} {ad1_data_IBUF[5]} {ad1_data_IBUF[6]} {ad1_data_IBUF[7]} {ad1_data_IBUF[8]} {ad1_data_IBUF[9]} {ad1_data_IBUF[10]} {ad1_data_IBUF[11]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 12 [get_debug_ports u_ila_0/probe12]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
+connect_debug_port u_ila_0/probe12 [get_nets [list {ad2_data_IBUF[0]} {ad2_data_IBUF[1]} {ad2_data_IBUF[2]} {ad2_data_IBUF[3]} {ad2_data_IBUF[4]} {ad2_data_IBUF[5]} {ad2_data_IBUF[6]} {ad2_data_IBUF[7]} {ad2_data_IBUF[8]} {ad2_data_IBUF[9]} {ad2_data_IBUF[10]} {ad2_data_IBUF[11]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe13]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe13]
+connect_debug_port u_ila_0/probe13 [get_nets [list {chb_data[0]} {chb_data[1]} {chb_data[2]} {chb_data[3]} {chb_data[4]} {chb_data[5]} {chb_data[6]} {chb_data[7]} {chb_data[8]} {chb_data[9]} {chb_data[10]} {chb_data[11]} {chb_data[12]} {chb_data[13]} {chb_data[14]} {chb_data[15]} {chb_data[16]} {chb_data[17]} {chb_data[18]} {chb_data[19]} {chb_data[20]} {chb_data[21]} {chb_data[22]} {chb_data[23]} {chb_data[24]} {chb_data[25]} {chb_data[26]} {chb_data[27]} {chb_data[28]} {chb_data[29]} {chb_data[30]} {chb_data[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 4 [get_debug_ports u_ila_0/probe14]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe14]
+connect_debug_port u_ila_0/probe14 [get_nets [list {u1/ipsend_inst/tx_state[0]} {u1/ipsend_inst/tx_state[1]} {u1/ipsend_inst/tx_state[2]} {u1/ipsend_inst/tx_state[3]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 17 [get_debug_ports u_ila_0/probe15]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe15]
+connect_debug_port u_ila_0/probe15 [get_nets [list {sbs[0]} {sbs[1]} {sbs[2]} {sbs[3]} {sbs[4]} {sbs[5]} {sbs[6]} {sbs[7]} {sbs[8]} {sbs[9]} {sbs[10]} {sbs[11]} {sbs[12]} {sbs[13]} {sbs[14]} {sbs[15]} {sbs[16]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe16]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe16]
+connect_debug_port u_ila_0/probe16 [get_nets [list ram_rdy ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe17]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe17]
+connect_debug_port u_ila_0/probe17 [get_nets [list ram_rdy1 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe18]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe18]
+connect_debug_port u_ila_0/probe18 [get_nets [list ram_rdy2 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe19]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe19]
+connect_debug_port u_ila_0/probe19 [get_nets [list ram_store/ram_switch_signal ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe20]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe20]
+connect_debug_port u_ila_0/probe20 [get_nets [list ram_store/rd_en1 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe21]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe21]
+connect_debug_port u_ila_0/probe21 [get_nets [list ram_store/rd_en2 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe22]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe22]
+connect_debug_port u_ila_0/probe22 [get_nets [list store_en ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe23]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe23]
+connect_debug_port u_ila_0/probe23 [get_nets [list ram_store/wr_en1 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe24]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe24]
+connect_debug_port u_ila_0/probe24 [get_nets [list ram_store/wr_en2 ]]
+save_constraints
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2719.387 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Dec  2 21:13:24 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/synth_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/output_reserve_bit/ethernet_test_216bit_2ads_normalwork.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/output_reserve_bit/ethernet_test_216bit_2ads_normalwork.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+launch_runs impl_1 -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Dec  2 21:14:52 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Dec  2 21:24:26 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+ERROR: [Labtools 27-3412] Mismatch between the design programmed into the device 'xc7a35t' (JTAG device index = '0'
+ and the probes file(s) 'C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx'.
+ The hw_probe 'ad1_data_IBUF' in the probes file has port index '11'. This port location for the ILA core at location (uuid_23E7D65A79BC59F7BC47406C1714DFAE), does not support a data probe.
+.
+Resolution: 
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the JTAG clock frequency is 2.5x times slower than the frequency of the clock connected to your debug hub.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+ERROR: [Labtools 27-3412] Mismatch between the design programmed into the device 'xc7a35t' (JTAG device index = '0'
+ and the probes file(s) 'C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx'.
+ The hw_probe 'ad1_data_IBUF' in the probes file has port index '11'. This port location for the ILA core at location (uuid_23E7D65A79BC59F7BC47406C1714DFAE), does not support a data probe.
+.
+Resolution: 
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the JTAG clock frequency is 2.5x times slower than the frequency of the clock connected to your debug hub.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/output_reserve_bit/ethernet_test_216bit_2ads_normalwork.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-1347] Unable to find Debug Probes file []. Please update hw_device property [PROBES.FILE]
+ Update of hw_probe objects, will be skipped.
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) .
+The device design has 1 ILA core(s) and 0 VIO core(s). 0 ILA core(s) and 0 VIO core(s) are matched in the probes file(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/output_reserve_bit/ethernet_test_216bit_2ads_normalwork.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-1347] Unable to find Debug Probes file []. Please update hw_device property [PROBES.FILE]
+ Update of hw_probe objects, will be skipped.
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) .
+The device design has 1 ILA core(s) and 0 VIO core(s). 0 ILA core(s) and 0 VIO core(s) are matched in the probes file(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+WARNING: Simulation object u_ila_0_tx_state was not found in the design.
+set_property PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+set_property PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+ERROR: [Labtools 27-3412] Mismatch between the design programmed into the device 'xc7a35t' (JTAG device index = '0'
+ and the probes file(s) 'C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx'.
+ The hw_probe 'ad1_data_IBUF' in the probes file has port index '11'. This port location for the ILA core at location (uuid_23E7D65A79BC59F7BC47406C1714DFAE), does not support a data probe.
+.
+Resolution: 
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the JTAG clock frequency is 2.5x times slower than the frequency of the clock connected to your debug hub.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Dec  2 21:32:33 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/synth_1/runme.log
+[Wed Dec  2 21:32:33 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/runme.log
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-1347] Unable to find Debug Probes file [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx]. Please update hw_device property [PROBES.FILE]
+ Update of hw_probe objects, will be skipped.
+ERROR: [Common 17-48] File not found: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210512180081}
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210512180081]
+set_property PARAM.FREQUENCY 5000000 [get_hw_targets */xilinx_tcf/Digilent/210512180081]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+close_design
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+ERROR: [Labtools 27-3412] Mismatch between the design programmed into the device 'xc7a35t' (JTAG device index = '0'
+ and the probes file(s) 'C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx'.
+ The hw_probe 'ad1_data_IBUF' in the probes file has port index '11'. This port location for the ILA core at location (uuid_23E7D65A79BC59F7BC47406C1714DFAE), does not support a data probe.
+.
+Resolution: 
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the JTAG clock frequency is 2.5x times slower than the frequency of the clock connected to your debug hub.
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210512180081]
+set_property PARAM.FREQUENCY 5000000 [get_hw_targets */xilinx_tcf/Digilent/210512180081]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+ERROR: [Labtools 27-3412] Mismatch between the design programmed into the device 'xc7a35t' (JTAG device index = '0'
+ and the probes file(s) 'C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx'.
+ The hw_probe 'ad1_data_IBUF' in the probes file has port index '11'. This port location for the ILA core at location (uuid_23E7D65A79BC59F7BC47406C1714DFAE), does not support a data probe.
+.
+Resolution: 
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the JTAG clock frequency is 2.5x times slower than the frequency of the clock connected to your debug hub.
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210512180081}
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+disconnect_hw_server localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210512180081]
+set_property PARAM.FREQUENCY 3750000 [get_hw_targets */xilinx_tcf/Digilent/210512180081]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+ERROR: [Labtools 27-3412] Mismatch between the design programmed into the device 'xc7a35t' (JTAG device index = '0'
+ and the probes file(s) 'C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx'.
+ The hw_probe 'ad1_data_IBUF' in the probes file has port index '11'. This port location for the ILA core at location (uuid_23E7D65A79BC59F7BC47406C1714DFAE), does not support a data probe.
+.
+Resolution: 
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the JTAG clock frequency is 2.5x times slower than the frequency of the clock connected to your debug hub.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Dec-02 21:40:09
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Dec-02 21:40:09
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {sbs} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Dec-02 21:40:20
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Dec-02 21:40:20
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Dec-02 21:40:26
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Dec-02 21:40:26
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Dec-02 21:40:30
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Dec-02 21:40:30
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Dec-02 21:40:35
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Dec-02 21:40:35
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Dec-02 21:40:43
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Dec-02 21:40:43
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Dec-02 21:40:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Dec-02 21:40:49
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Dec-02 21:40:53
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Dec-02 21:40:53
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Dec-02 21:40:58
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Dec-02 21:40:58
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Dec-02 21:41:17
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Dec-02 21:41:17
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Dec-02 21:41:21
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Dec-02 21:41:21
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Dec-02 21:41:29
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Dec-02 21:41:29
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Dec-02 21:41:33
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Dec-02 21:41:33
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Dec-02 21:41:37
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Dec-02 21:41:37
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Dec  2 21:45:09 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Dec  2 21:46:37 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tftg256-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'pll_unit'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/fixed_to_float/fixed_to_float.dcp' for cell 'ltc2290/u1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/multiply/multiply.dcp' for cell 'ltc2290/u3'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/ram/ram.dcp' for cell 'ram_store/ram_inst2'
+INFO: [Netlist 29-17] Analyzing 159 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'pll_unit/inst'
+Finished Parsing XDC File [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'pll_unit/inst'
+Parsing XDC File [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'pll_unit/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'pll_unit/inst'
+Parsing XDC File [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc]
+WARNING: [Vivado 12-584] No ports matched 'e_txer'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'e_txer'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'e_txer'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'sbs[0]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:204]
+WARNING: [Vivado 12-507] No nets matched 'sbs[1]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:204]
+WARNING: [Vivado 12-507] No nets matched 'sbs[2]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:204]
+WARNING: [Vivado 12-507] No nets matched 'sbs[3]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:204]
+WARNING: [Vivado 12-507] No nets matched 'sbs[4]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:204]
+WARNING: [Vivado 12-507] No nets matched 'sbs[5]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:204]
+WARNING: [Vivado 12-507] No nets matched 'sbs[6]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:204]
+WARNING: [Vivado 12-507] No nets matched 'sbs[7]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:204]
+WARNING: [Vivado 12-507] No nets matched 'sbs[8]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:204]
+WARNING: [Vivado 12-507] No nets matched 'sbs[9]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:204]
+WARNING: [Vivado 12-507] No nets matched 'sbs[10]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:204]
+WARNING: [Vivado 12-507] No nets matched 'sbs[11]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:204]
+WARNING: [Vivado 12-507] No nets matched 'sbs[12]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:204]
+WARNING: [Vivado 12-507] No nets matched 'sbs[13]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:204]
+WARNING: [Vivado 12-507] No nets matched 'sbs[14]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:204]
+WARNING: [Vivado 12-507] No nets matched 'sbs[15]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:204]
+WARNING: [Vivado 12-507] No nets matched 'sbs[16]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:204]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:204]
+Finished Parsing XDC File [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2896.230 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 2896.230 ; gain = 12.070
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 2048 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list e_gtxc_OBUF_BUFG ]]
+set_property port_width 3 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {ltc2290/state[0]} {ltc2290/state[1]} {ltc2290/state[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 3 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {ram_state[0]} {ram_state[1]} {ram_state[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 10 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {ram_rd_addr[0]} {ram_rd_addr[1]} {ram_rd_addr[2]} {ram_rd_addr[3]} {ram_rd_addr[4]} {ram_rd_addr[5]} {ram_rd_addr[6]} {ram_rd_addr[7]} {ram_rd_addr[8]} {ram_rd_addr[9]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 12 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {ad1_data_IBUF[0]} {ad1_data_IBUF[1]} {ad1_data_IBUF[2]} {ad1_data_IBUF[3]} {ad1_data_IBUF[4]} {ad1_data_IBUF[5]} {ad1_data_IBUF[6]} {ad1_data_IBUF[7]} {ad1_data_IBUF[8]} {ad1_data_IBUF[9]} {ad1_data_IBUF[10]} {ad1_data_IBUF[11]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {cha_data[0]} {cha_data[1]} {cha_data[2]} {cha_data[3]} {cha_data[4]} {cha_data[5]} {cha_data[6]} {cha_data[7]} {cha_data[8]} {cha_data[9]} {cha_data[10]} {cha_data[11]} {cha_data[12]} {cha_data[13]} {cha_data[14]} {cha_data[15]} {cha_data[16]} {cha_data[17]} {cha_data[18]} {cha_data[19]} {cha_data[20]} {cha_data[21]} {cha_data[22]} {cha_data[23]} {cha_data[24]} {cha_data[25]} {cha_data[26]} {cha_data[27]} {cha_data[28]} {cha_data[29]} {cha_data[30]} {cha_data[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {chb_data[0]} {chb_data[1]} {chb_data[2]} {chb_data[3]} {chb_data[4]} {chb_data[5]} {chb_data[6]} {chb_data[7]} {chb_data[8]} {chb_data[9]} {chb_data[10]} {chb_data[11]} {chb_data[12]} {chb_data[13]} {chb_data[14]} {chb_data[15]} {chb_data[16]} {chb_data[17]} {chb_data[18]} {chb_data[19]} {chb_data[20]} {chb_data[21]} {chb_data[22]} {chb_data[23]} {chb_data[24]} {chb_data[25]} {chb_data[26]} {chb_data[27]} {chb_data[28]} {chb_data[29]} {chb_data[30]} {chb_data[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 4 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {u1/ipsend_inst/tx_state[0]} {u1/ipsend_inst/tx_state[1]} {u1/ipsend_inst/tx_state[2]} {u1/ipsend_inst/tx_state[3]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 12 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {ad2_data_IBUF[0]} {ad2_data_IBUF[1]} {ad2_data_IBUF[2]} {ad2_data_IBUF[3]} {ad2_data_IBUF[4]} {ad2_data_IBUF[5]} {ad2_data_IBUF[6]} {ad2_data_IBUF[7]} {ad2_data_IBUF[8]} {ad2_data_IBUF[9]} {ad2_data_IBUF[10]} {ad2_data_IBUF[11]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list {ram_rd_data[0]} {ram_rd_data[1]} {ram_rd_data[2]} {ram_rd_data[3]} {ram_rd_data[4]} {ram_rd_data[5]} {ram_rd_data[6]} {ram_rd_data[7]} {ram_rd_data[8]} {ram_rd_data[9]} {ram_rd_data[10]} {ram_rd_data[11]} {ram_rd_data[12]} {ram_rd_data[13]} {ram_rd_data[14]} {ram_rd_data[15]} {ram_rd_data[16]} {ram_rd_data[17]} {ram_rd_data[18]} {ram_rd_data[19]} {ram_rd_data[20]} {ram_rd_data[21]} {ram_rd_data[22]} {ram_rd_data[23]} {ram_rd_data[24]} {ram_rd_data[25]} {ram_rd_data[26]} {ram_rd_data[27]} {ram_rd_data[28]} {ram_rd_data[29]} {ram_rd_data[30]} {ram_rd_data[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list {ram_switch_i[0]} {ram_switch_i[1]} {ram_switch_i[2]} {ram_switch_i[3]} {ram_switch_i[4]} {ram_switch_i[5]} {ram_switch_i[6]} {ram_switch_i[7]} {ram_switch_i[8]} {ram_switch_i[9]} {ram_switch_i[10]} {ram_switch_i[11]} {ram_switch_i[12]} {ram_switch_i[13]} {ram_switch_i[14]} {ram_switch_i[15]} {ram_switch_i[16]} {ram_switch_i[17]} {ram_switch_i[18]} {ram_switch_i[19]} {ram_switch_i[20]} {ram_switch_i[21]} {ram_switch_i[22]} {ram_switch_i[23]} {ram_switch_i[24]} {ram_switch_i[25]} {ram_switch_i[26]} {ram_switch_i[27]} {ram_switch_i[28]} {ram_switch_i[29]} {ram_switch_i[30]} {ram_switch_i[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 10 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list {ram_store/chb_addr[0]} {ram_store/chb_addr[1]} {ram_store/chb_addr[2]} {ram_store/chb_addr[3]} {ram_store/chb_addr[4]} {ram_store/chb_addr[5]} {ram_store/chb_addr[6]} {ram_store/chb_addr[7]} {ram_store/chb_addr[8]} {ram_store/chb_addr[9]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list {ram_store/cnt[0]} {ram_store/cnt[1]} {ram_store/cnt[2]} {ram_store/cnt[3]} {ram_store/cnt[4]} {ram_store/cnt[5]} {ram_store/cnt[6]} {ram_store/cnt[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 4 [get_debug_ports u_ila_0/probe12]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
+connect_debug_port u_ila_0/probe12 [get_nets [list {ram_store/state[0]} {ram_store/state[1]} {ram_store/state[2]} {ram_store/state[3]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 10 [get_debug_ports u_ila_0/probe13]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe13]
+connect_debug_port u_ila_0/probe13 [get_nets [list {ram_store/cha_addr[0]} {ram_store/cha_addr[1]} {ram_store/cha_addr[2]} {ram_store/cha_addr[3]} {ram_store/cha_addr[4]} {ram_store/cha_addr[5]} {ram_store/cha_addr[6]} {ram_store/cha_addr[7]} {ram_store/cha_addr[8]} {ram_store/cha_addr[9]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe14]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe14]
+connect_debug_port u_ila_0/probe14 [get_nets [list {ram_store/ts_cnt[0]} {ram_store/ts_cnt[1]} {ram_store/ts_cnt[2]} {ram_store/ts_cnt[3]} {ram_store/ts_cnt[4]} {ram_store/ts_cnt[5]} {ram_store/ts_cnt[6]} {ram_store/ts_cnt[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe15]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe15]
+connect_debug_port u_ila_0/probe15 [get_nets [list ram_rdy ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe16]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe16]
+connect_debug_port u_ila_0/probe16 [get_nets [list ram_rdy1 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe17]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe17]
+connect_debug_port u_ila_0/probe17 [get_nets [list ram_rdy2 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe18]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe18]
+connect_debug_port u_ila_0/probe18 [get_nets [list ram_store/ram_switch_signal ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe19]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe19]
+connect_debug_port u_ila_0/probe19 [get_nets [list ram_store/rd_en1 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe20]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe20]
+connect_debug_port u_ila_0/probe20 [get_nets [list ram_store/rd_en2 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe21]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe21]
+connect_debug_port u_ila_0/probe21 [get_nets [list store_en ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe22]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe22]
+connect_debug_port u_ila_0/probe22 [get_nets [list ram_store/wr_en1 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe23]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe23]
+connect_debug_port u_ila_0/probe23 [get_nets [list ram_store/wr_en2 ]]
+save_constraints
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2910.746 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Dec  2 21:48:09 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/synth_1/runme.log
+close_design
+launch_runs impl_1 -jobs 2
+[Wed Dec  2 21:49:28 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tftg256-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'pll_unit'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/fixed_to_float/fixed_to_float.dcp' for cell 'ltc2290/u1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/multiply/multiply.dcp' for cell 'ltc2290/u3'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/ram/ram.dcp' for cell 'ram_store/ram_inst2'
+INFO: [Netlist 29-17] Analyzing 159 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'pll_unit/inst'
+Finished Parsing XDC File [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'pll_unit/inst'
+Parsing XDC File [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'pll_unit/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'pll_unit/inst'
+Parsing XDC File [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc]
+WARNING: [Vivado 12-584] No ports matched 'e_txer'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'e_txer'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'e_txer'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'sbs[0]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:131]
+WARNING: [Vivado 12-507] No nets matched 'sbs[1]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:131]
+WARNING: [Vivado 12-507] No nets matched 'sbs[2]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:131]
+WARNING: [Vivado 12-507] No nets matched 'sbs[3]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:131]
+WARNING: [Vivado 12-507] No nets matched 'sbs[4]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:131]
+WARNING: [Vivado 12-507] No nets matched 'sbs[5]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:131]
+WARNING: [Vivado 12-507] No nets matched 'sbs[6]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:131]
+WARNING: [Vivado 12-507] No nets matched 'sbs[7]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:131]
+WARNING: [Vivado 12-507] No nets matched 'sbs[8]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:131]
+WARNING: [Vivado 12-507] No nets matched 'sbs[9]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:131]
+WARNING: [Vivado 12-507] No nets matched 'sbs[10]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:131]
+WARNING: [Vivado 12-507] No nets matched 'sbs[11]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:131]
+WARNING: [Vivado 12-507] No nets matched 'sbs[12]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:131]
+WARNING: [Vivado 12-507] No nets matched 'sbs[13]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:131]
+WARNING: [Vivado 12-507] No nets matched 'sbs[14]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:131]
+WARNING: [Vivado 12-507] No nets matched 'sbs[15]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:131]
+WARNING: [Vivado 12-507] No nets matched 'sbs[16]'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:131]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:131]
+Finished Parsing XDC File [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2918.879 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2918.879 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Dec  2 21:57:00 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+ERROR: [Labtools 27-3412] Mismatch between the design programmed into the device 'xc7a35t' (JTAG device index = '0'
+ and the probes file(s) 'C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx'.
+ The hw_probe 'ram_rd_data' in the probes file has port index '8'. This port location for the ILA core at location (uuid_23E7D65A79BC59F7BC47406C1714DFAE), does not support a data probe.
+.
+Resolution: 
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the JTAG clock frequency is 2.5x times slower than the frequency of the clock connected to your debug hub.
+set_property PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2918.879 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+WARNING: Simulation object u_ila_0_tx_state was not found in the design.
+WARNING: Simulation object sbs was not found in the design.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Dec-02 21:59:44
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Dec-02 21:59:44
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Dec  2 22:00:35 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/synth_1/runme.log
+[Wed Dec  2 22:00:35 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+ERROR: [Labtools 27-3412] Mismatch between the design programmed into the device 'xc7a35t' (JTAG device index = '0'
+ and the probes file(s) 'C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx'.
+ The hw_probe 'ad1_data_IBUF' in the probes file has port index '3'. This port location for the ILA core at location (uuid_23E7D65A79BC59F7BC47406C1714DFAE), does not support a data probe.
+.
+Resolution: 
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the JTAG clock frequency is 2.5x times slower than the frequency of the clock connected to your debug hub.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+ERROR: [Labtools 27-3412] Mismatch between the design programmed into the device 'xc7a35t' (JTAG device index = '0'
+ and the probes file(s) 'C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx'.
+ The hw_probe 'ad1_data_IBUF' in the probes file has port index '3'. This port location for the ILA core at location (uuid_23E7D65A79BC59F7BC47406C1714DFAE), does not support a data probe.
+.
+Resolution: 
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the JTAG clock frequency is 2.5x times slower than the frequency of the clock connected to your debug hub.
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210512180081]
+set_property PARAM.FREQUENCY 3750000 [get_hw_targets */xilinx_tcf/Digilent/210512180081]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+ERROR: [Labtools 27-3412] Mismatch between the design programmed into the device 'xc7a35t' (JTAG device index = '0'
+ and the probes file(s) 'C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx'.
+ The hw_probe 'ad1_data_IBUF' in the probes file has port index '3'. This port location for the ILA core at location (uuid_23E7D65A79BC59F7BC47406C1714DFAE), does not support a data probe.
+.
+Resolution: 
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the JTAG clock frequency is 2.5x times slower than the frequency of the clock connected to your debug hub.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+ERROR: [Labtools 27-3412] Mismatch between the design programmed into the device 'xc7a35t' (JTAG device index = '0'
+ and the probes file(s) 'C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx'.
+ The hw_probe 'ad1_data_IBUF' in the probes file has port index '3'. This port location for the ILA core at location (uuid_23E7D65A79BC59F7BC47406C1714DFAE), does not support a data probe.
+.
+Resolution: 
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the JTAG clock frequency is 2.5x times slower than the frequency of the clock connected to your debug hub.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+ERROR: [Labtools 27-3412] Mismatch between the design programmed into the device 'xc7a35t' (JTAG device index = '0'
+ and the probes file(s) 'C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx'.
+ The hw_probe 'ad1_data_IBUF' in the probes file has port index '3'. This port location for the ILA core at location (uuid_23E7D65A79BC59F7BC47406C1714DFAE), does not support a data probe.
+.
+Resolution: 
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the JTAG clock frequency is 2.5x times slower than the frequency of the clock connected to your debug hub.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/output_reserve_bit/ethernet_test_216bit_2ads_normalwork.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2929.184 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-1347] Unable to find Debug Probes file []. Please update hw_device property [PROBES.FILE]
+ Update of hw_probe objects, will be skipped.
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) .
+The device design has 1 ILA core(s) and 0 VIO core(s). 0 ILA core(s) and 0 VIO core(s) are matched in the probes file(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/output_reserve_bit/ethernet_test_216bit_2ads_normalwork.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-1347] Unable to find Debug Probes file []. Please update hw_device property [PROBES.FILE]
+ Update of hw_probe objects, will be skipped.
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) .
+The device design has 1 ILA core(s) and 0 VIO core(s). 0 ILA core(s) and 0 VIO core(s) are matched in the probes file(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Dec  2 22:46:53 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Dec  2 22:48:58 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Dec  2 22:51:36 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  2 23:03:57 2020...

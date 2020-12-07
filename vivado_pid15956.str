@@ -1,0 +1,142 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 15956
+License: Customer
+
+Current time: 	Fri Nov 27 21:59:36 CST 2020
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 35 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Scottar
+User home directory: C:/Users/Scottar
+User working directory: C:/Users/Scottar/Desktop/slave_relateive/fgg256_hs_ethernet
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2018.3
+RDI_DATADIR: D:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: D:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/Scottar/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/Scottar/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/Scottar/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Scottar/Desktop/slave_relateive/fgg256_hs_ethernet/vivado.log
+Vivado journal file location: 	C:/Users/Scottar/Desktop/slave_relateive/fgg256_hs_ethernet/vivado.jou
+Engine tmp dir: 	C:/Users/Scottar/Desktop/slave_relateive/fgg256_hs_ethernet/.Xil/Vivado-15956-DESKTOP-2ULHKU6
+
+Xilinx Environment Variables
+----------------------------
+NO_XILINX_DATA_LICENSE: HIDDEN
+XILINX: D:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2018.3
+XILINX_VIVADO: D:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 540 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Scottar\Desktop\slave_relateive\fgg256_hs_ethernet\hi_time_sample_board.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 564 MB. GUI used memory: 43 MB. Current time: 11/27/20, 9:59:38 PM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 99 MB (+101003kb) [00:00:23]
+// [Engine Memory]: 582 MB (+458885kb) [00:00:23]
+// [Engine Memory]: 619 MB (+8183kb) [00:00:27]
+// WARNING: HEventQueue.dispatchEvent() is taking  6516 ms.
+// Tcl Message: open_project C:/Users/Scottar/Desktop/slave_relateive/fgg256_hs_ethernet/hi_time_sample_board.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Scottar/Desktop/slave_relateive/fgg256_codeok' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'. 
+// WARNING: HEventQueue.dispatchEvent() is taking  1428 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 653.844 ; gain = 93.547 
+// Project name: hi_time_sample_board; location: C:/Users/Scottar/Desktop/slave_relateive/fgg256_hs_ethernet; part: xc7a35tftg256-1
+// [Engine Memory]: 899 MB (+260964kb) [00:00:31]
+dismissDialog("Open Project"); // bx (cp)
+// a (cp): Critical Messages: addNotify
+// [GUI Memory]: 113 MB (+10008kb) [00:00:33]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 922 MB. GUI used memory: 50 MB. Current time: 11/27/20, 10:00:18 PM CST
+// Elapsed time: 35 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ethernet_test (ethernet_test.v)]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ethernet_test (ethernet_test.v), u1 : udp (udp.v)]", 4); // B (D, cp)
+// PAPropertyPanels.initPanels (ipsend.v) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ethernet_test (ethernet_test.v), u1 : udp (udp.v), ipsend_inst : ipsend (ipsend.v)]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ethernet_test (ethernet_test.v), u1 : udp (udp.v), ipsend_inst : ipsend (ipsend.v)]", 5, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ethernet_test (ethernet_test.v), u1 : udp (udp.v), ipsend_inst : ipsend (ipsend.v)]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ethernet_test (ethernet_test.v), u1 : udp (udp.v), ipsend_inst : ipsend (ipsend.v)]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ethernet_test (ethernet_test.v), u1 : udp (udp.v), ipsend_inst : ipsend (ipsend.v)]", 5, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ethernet_test (ethernet_test.v), u1 : udp (udp.v), ipsend_inst : ipsend (ipsend.v)]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ethernet_test (ethernet_test.v), u1 : udp (udp.v), ipsend_inst : ipsend (ipsend.v)]", 5, false); // B (D, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("ipsend.v", 127, 157); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("ipsend.v", 132, 212); // cl (w, cp)
+selectCodeEditor("ipsend.v", 37, 243); // cl (w, cp)
+// Elapsed time: 72 seconds
+selectCodeEditor("ipsend.v", 5, 121); // cl (w, cp)
+typeControlKey((HResource) null, "ipsend.v", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 618ms to process. Increasing delay to 3000 ms.
+// Elapsed time: 27 seconds
+selectCodeEditor("ipsend.v", 269, 211); // cl (w, cp)

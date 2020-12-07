@@ -1,0 +1,187 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 19668
+License: Customer
+
+Current time: 	Wed Dec 02 20:46:10 CST 2020
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 2560x1440
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 34 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Scottar
+User home directory: C:/Users/Scottar
+User working directory: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2018.3
+RDI_DATADIR: D:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: D:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/Scottar/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/Scottar/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/Scottar/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/vivado.log
+Vivado journal file location: 	C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/vivado.jou
+Engine tmp dir: 	C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/.Xil/Vivado-19668-DESKTOP-2ULHKU6
+
+Xilinx Environment Variables
+----------------------------
+NO_XILINX_DATA_LICENSE: HIDDEN
+XILINX: D:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2018.3
+XILINX_VIVADO: D:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 515 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Scottar\Desktop\slave_relateive\fgg256_plus_ethernet\hi_time_sample_board.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 519 MB. GUI used memory: 39 MB. Current time: 12/2/20, 8:46:12 PM CST
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 93 MB (+95523kb) [00:00:35]
+// [Engine Memory]: 587 MB (+463526kb) [00:00:35]
+// WARNING: HEventQueue.dispatchEvent() is taking  7717 ms.
+// Tcl Message: open_project C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 642 MB. GUI used memory: 45 MB. Current time: 12/2/20, 8:46:27 PM CST
+// [Engine Memory]: 642 MB (+26924kb) [00:00:40]
+// WARNING: HEventQueue.dispatchEvent() is taking  2054 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1487 ms. Increasing delay to 3000 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 666.723 ; gain = 110.523 
+// Project name: hi_time_sample_board; location: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet; part: xc7a35tftg256-1
+// [Engine Memory]: 776 MB (+107384kb) [00:00:43]
+dismissDialog("Open Project"); // bx (cp)
+// a (cp): Critical Messages: addNotify
+// [GUI Memory]: 104 MB (+6483kb) [00:00:48]
+// [Engine Memory]: 818 MB (+2806kb) [00:00:48]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 40 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cp)
+// PAPropertyPanels.initPanels (readbcode.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, readbcode (readbcode.v)]", 2, false); // B (D, cp)
+// [GUI Memory]: 119 MB (+9687kb) [00:01:30]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ethernet_test (ethernet_test.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ethernet_test (ethernet_test.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ethernet_test (ethernet_test.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ethernet_test (ethernet_test.v)]", 1, true); // B (D, cp) - Node
+// [Engine Memory]: 864 MB (+5754kb) [00:01:33]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ethernet_test (ethernet_test.v), ltc2290 : ltc2290 (ltc2290.v)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ethernet_test (ethernet_test.v), ltc2290 : ltc2290 (ltc2290.v)]", 4, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 866 MB. GUI used memory: 62 MB. Current time: 12/2/20, 8:47:22 PM CST
+selectCodeEditor("ltc2290.v", 564, 335); // cl (w, cp)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2850 ms. Increasing delay to 8550 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2689 ms. Increasing delay to 4000 ms.
+// Elapsed time: 70 seconds
+selectCodeEditor("ltc2290.v", 1029, 334); // cl (w, cp)
+selectCodeEditor("ltc2290.v", 220, 330); // cl (w, cp)
+typeControlKey((HResource) null, "ltc2290.v", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "ltc2290.v", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 445ms to process. Increasing delay to 3000 ms.
+selectCodeEditor("ltc2290.v", 1156, 328); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("ltc2290.v", 273, 433); // cl (w, cp)
+selectCodeEditor("ltc2290.v", 221, 334); // cl (w, cp)
+selectCodeEditor("ltc2290.v", 221, 334, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ltc2290.v", 221, 334); // cl (w, cp)
+selectCodeEditor("ltc2290.v", 1214, 337); // cl (w, cp)
+typeControlKey((HResource) null, "ltc2290.v", 'v'); // cl (w, cp)
+selectCodeEditor("ltc2290.v", 1226, 336); // cl (w, cp)
+selectCodeEditor("ltc2290.v", 1226, 336, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "ltc2290.v", 'c'); // cl (w, cp)
+selectCodeEditor("ltc2290.v", 175, 335); // cl (w, cp)
+typeControlKey((HResource) null, "ltc2290.v", 'v'); // cl (w, cp)
+typeControlKey((HResource) null, "ltc2290.v", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ltc2290.v", 568, 261); // cl (w, cp)
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_NO, "No"); // a (A)
+// f (cp): Launch Runs: addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cp)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // u (Q, cp)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // u (Q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  2103 ms.
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// 'Q' command handler elapsed time: 3 seconds
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bx (cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  2651 ms.

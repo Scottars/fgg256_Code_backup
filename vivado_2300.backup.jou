@@ -1,0 +1,223 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Dec  3 11:53:57 2020
+# Process ID: 2300
+# Current directory: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12056 C:\Users\Scottar\Desktop\slave_relateive\fgg256_plus_ethernet\hi_time_sample_board.xpr
+# Log file: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/vivado.log
+# Journal file: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 2048 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list e_gtxc_OBUF_BUFG ]]
+set_property port_width 12 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {ad1_data_IBUF[0]} {ad1_data_IBUF[1]} {ad1_data_IBUF[2]} {ad1_data_IBUF[3]} {ad1_data_IBUF[4]} {ad1_data_IBUF[5]} {ad1_data_IBUF[6]} {ad1_data_IBUF[7]} {ad1_data_IBUF[8]} {ad1_data_IBUF[9]} {ad1_data_IBUF[10]} {ad1_data_IBUF[11]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 12 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {ad2_data_IBUF[0]} {ad2_data_IBUF[1]} {ad2_data_IBUF[2]} {ad2_data_IBUF[3]} {ad2_data_IBUF[4]} {ad2_data_IBUF[5]} {ad2_data_IBUF[6]} {ad2_data_IBUF[7]} {ad2_data_IBUF[8]} {ad2_data_IBUF[9]} {ad2_data_IBUF[10]} {ad2_data_IBUF[11]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {ram_rd_data[0]} {ram_rd_data[1]} {ram_rd_data[2]} {ram_rd_data[3]} {ram_rd_data[4]} {ram_rd_data[5]} {ram_rd_data[6]} {ram_rd_data[7]} {ram_rd_data[8]} {ram_rd_data[9]} {ram_rd_data[10]} {ram_rd_data[11]} {ram_rd_data[12]} {ram_rd_data[13]} {ram_rd_data[14]} {ram_rd_data[15]} {ram_rd_data[16]} {ram_rd_data[17]} {ram_rd_data[18]} {ram_rd_data[19]} {ram_rd_data[20]} {ram_rd_data[21]} {ram_rd_data[22]} {ram_rd_data[23]} {ram_rd_data[24]} {ram_rd_data[25]} {ram_rd_data[26]} {ram_rd_data[27]} {ram_rd_data[28]} {ram_rd_data[29]} {ram_rd_data[30]} {ram_rd_data[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {ram_switch_i[0]} {ram_switch_i[1]} {ram_switch_i[2]} {ram_switch_i[3]} {ram_switch_i[4]} {ram_switch_i[5]} {ram_switch_i[6]} {ram_switch_i[7]} {ram_switch_i[8]} {ram_switch_i[9]} {ram_switch_i[10]} {ram_switch_i[11]} {ram_switch_i[12]} {ram_switch_i[13]} {ram_switch_i[14]} {ram_switch_i[15]} {ram_switch_i[16]} {ram_switch_i[17]} {ram_switch_i[18]} {ram_switch_i[19]} {ram_switch_i[20]} {ram_switch_i[21]} {ram_switch_i[22]} {ram_switch_i[23]} {ram_switch_i[24]} {ram_switch_i[25]} {ram_switch_i[26]} {ram_switch_i[27]} {ram_switch_i[28]} {ram_switch_i[29]} {ram_switch_i[30]} {ram_switch_i[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {cha_data[0]} {cha_data[1]} {cha_data[2]} {cha_data[3]} {cha_data[4]} {cha_data[5]} {cha_data[6]} {cha_data[7]} {cha_data[8]} {cha_data[9]} {cha_data[10]} {cha_data[11]} {cha_data[12]} {cha_data[13]} {cha_data[14]} {cha_data[15]} {cha_data[16]} {cha_data[17]} {cha_data[18]} {cha_data[19]} {cha_data[20]} {cha_data[21]} {cha_data[22]} {cha_data[23]} {cha_data[24]} {cha_data[25]} {cha_data[26]} {cha_data[27]} {cha_data[28]} {cha_data[29]} {cha_data[30]} {cha_data[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 10 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {ram_rd_addr[0]} {ram_rd_addr[1]} {ram_rd_addr[2]} {ram_rd_addr[3]} {ram_rd_addr[4]} {ram_rd_addr[5]} {ram_rd_addr[6]} {ram_rd_addr[7]} {ram_rd_addr[8]} {ram_rd_addr[9]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {chb_data[0]} {chb_data[1]} {chb_data[2]} {chb_data[3]} {chb_data[4]} {chb_data[5]} {chb_data[6]} {chb_data[7]} {chb_data[8]} {chb_data[9]} {chb_data[10]} {chb_data[11]} {chb_data[12]} {chb_data[13]} {chb_data[14]} {chb_data[15]} {chb_data[16]} {chb_data[17]} {chb_data[18]} {chb_data[19]} {chb_data[20]} {chb_data[21]} {chb_data[22]} {chb_data[23]} {chb_data[24]} {chb_data[25]} {chb_data[26]} {chb_data[27]} {chb_data[28]} {chb_data[29]} {chb_data[30]} {chb_data[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 3 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {ram_state[0]} {ram_state[1]} {ram_state[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 10 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list {ram_store/cha_addr[0]} {ram_store/cha_addr[1]} {ram_store/cha_addr[2]} {ram_store/cha_addr[3]} {ram_store/cha_addr[4]} {ram_store/cha_addr[5]} {ram_store/cha_addr[6]} {ram_store/cha_addr[7]} {ram_store/cha_addr[8]} {ram_store/cha_addr[9]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 10 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list {ram_store/chb_addr[0]} {ram_store/chb_addr[1]} {ram_store/chb_addr[2]} {ram_store/chb_addr[3]} {ram_store/chb_addr[4]} {ram_store/chb_addr[5]} {ram_store/chb_addr[6]} {ram_store/chb_addr[7]} {ram_store/chb_addr[8]} {ram_store/chb_addr[9]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 3 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list {ltc2290/state[0]} {ltc2290/state[1]} {ltc2290/state[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list {ram_store/cnt[0]} {ram_store/cnt[1]} {ram_store/cnt[2]} {ram_store/cnt[3]} {ram_store/cnt[4]} {ram_store/cnt[5]} {ram_store/cnt[6]} {ram_store/cnt[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe12]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
+connect_debug_port u_ila_0/probe12 [get_nets [list {ram_store/ts_cnt[0]} {ram_store/ts_cnt[1]} {ram_store/ts_cnt[2]} {ram_store/ts_cnt[3]} {ram_store/ts_cnt[4]} {ram_store/ts_cnt[5]} {ram_store/ts_cnt[6]} {ram_store/ts_cnt[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 4 [get_debug_ports u_ila_0/probe13]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe13]
+connect_debug_port u_ila_0/probe13 [get_nets [list {ram_store/state[0]} {ram_store/state[1]} {ram_store/state[2]} {ram_store/state[3]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 4 [get_debug_ports u_ila_0/probe14]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe14]
+connect_debug_port u_ila_0/probe14 [get_nets [list {u1/ipsend_inst/tx_state[0]} {u1/ipsend_inst/tx_state[1]} {u1/ipsend_inst/tx_state[2]} {u1/ipsend_inst/tx_state[3]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe15]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe15]
+connect_debug_port u_ila_0/probe15 [get_nets [list ram_rdy ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe16]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe16]
+connect_debug_port u_ila_0/probe16 [get_nets [list ram_rdy1 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe17]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe17]
+connect_debug_port u_ila_0/probe17 [get_nets [list ram_rdy2 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe18]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe18]
+connect_debug_port u_ila_0/probe18 [get_nets [list ram_store/ram_switch_signal ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe19]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe19]
+connect_debug_port u_ila_0/probe19 [get_nets [list ram_store/rd_en1 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe20]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe20]
+connect_debug_port u_ila_0/probe20 [get_nets [list ram_store/rd_en2 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe21]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe21]
+connect_debug_port u_ila_0/probe21 [get_nets [list store_en ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe22]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe22]
+connect_debug_port u_ila_0/probe22 [get_nets [list ram_store/wr_en1 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe23]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe23]
+connect_debug_port u_ila_0/probe23 [get_nets [list ram_store/wr_en2 ]]
+save_constraints
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/impl_1/ethernet_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

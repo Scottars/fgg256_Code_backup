@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Dec  2 20:45:19 2020
+# Process ID: 19668
+# Current directory: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23296 C:\Users\Scottar\Desktop\slave_relateive\fgg256_plus_ethernet\hi_time_sample_board.xpr
+# Log file: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/vivado.log
+# Journal file: C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
