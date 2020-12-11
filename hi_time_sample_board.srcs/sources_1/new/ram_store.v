@@ -139,7 +139,7 @@ end
 write_cha:begin
         wr_en <= 1'b1;
         wr_addr <= cha_addr+1;
-        wr_data <= cha_data;
+        wr_data <=  cha_data;
 //        wr_data <= 32'h0000_00000;
         state <= write_usa;
 end
@@ -148,7 +148,7 @@ write_usa:begin
         wr_en <= 1'b1;
         wr_addr <= cha_addr+2;
         wr_data <= cnt_us;
-//        wr_data <= 32'h4000_4000;
+//        wr_data <= 32'h0000_0000;
         state <= write_chb;
 end
 

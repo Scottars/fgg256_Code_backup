@@ -52,12 +52,22 @@ initial
 	 preamble[5]<=8'h55;
 	 preamble[6]<=8'h55;
 	 preamble[7]<=8'hD5;
-	 mac_addr[0]<=8'hFF;                 //目的MAC地址 ff-ff-ff-ff-ff-ff, 全ff为广播包
-	 mac_addr[1]<=8'hFF;
-	 mac_addr[2]<=8'hFF;
-	 mac_addr[3]<=8'hFF;
-	 mac_addr[4]<=8'hFF;
-	 mac_addr[5]<=8'hFF;
+	 
+	 mac_addr[0]<=8'h38;                 //目的MAC地址 ff-ff-ff-ff-ff-ff, 全ff为广播包, asua 的maac地址：38-D5-47-4A-7D-0A
+	 mac_addr[1]<=8'hD5;
+	 mac_addr[2]<=8'h47;
+	 mac_addr[3]<=8'h4A;
+	 mac_addr[4]<=8'h7D;
+	 mac_addr[5]<=8'h0A;
+	 
+	 
+//	 mac_addr[0]<=8'hFF;                 //目的MAC地址 ff-ff-ff-ff-ff-ff, 全ff为广播包, asua 的maac地址：38-D5-47-4A-7D-0A
+//	 mac_addr[1]<=8'hFF;
+//	 mac_addr[2]<=8'hFF;
+//	 mac_addr[3]<=8'hFF;
+//	 mac_addr[4]<=8'hFF;
+//	 mac_addr[5]<=8'hFF;
+	 
 	 mac_addr[6]<=8'h00;                 //默认的开发板源MAC地址 00-0A-35-01-FE-C0, 用户也可以修改
 	 mac_addr[7]<=8'h0A;
 	 mac_addr[8]<=8'h35;

@@ -9,7 +9,7 @@
     <Object name="" gui_info="">
       <Properties Property="PROGRAM.ADDRESS_RANGE" value="use_file"/>
       <Properties Property="PROGRAM.BLANK_CHECK" value="0"/>
-      <Properties Property="PROGRAM.CFG_PROGRAM" value="1"/>
+      <Properties Property="PROGRAM.CFG_PROGRAM" value="0"/>
       <Properties Property="PROGRAM.CHECKSUM" value="0"/>
       <Properties Property="PROGRAM.ERASE" value="1"/>
       <Properties Property="PROGRAM.FILES" value="$_project_name_.runs/impl_1/ethernet_test.bin"/>

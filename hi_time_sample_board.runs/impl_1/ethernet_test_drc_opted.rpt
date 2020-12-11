@@ -1,0 +1,52 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Dec  8 13:16:29 2020
+| Host         : DESKTOP-2ULHKU6 running 64-bit major release  (build 9200)
+| Command      : report_drc -file ethernet_test_drc_opted.rpt -pb ethernet_test_drc_opted.pb -rpx ethernet_test_drc_opted.rpx
+| Design       : ethernet_test
+| Device       : xc7a35tftg256-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 3
++----------+----------+--------------------------------------+------------+
+| Rule     | Severity | Description                          | Violations |
++----------+----------+--------------------------------------+------------+
+| CFGBVS-7 | Warning  | CONFIG_VOLTAGE with Config Bank VCCO | 1          |
+| REQP-165 | Advisory | writefirst                           | 2          |
++----------+----------+--------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-7#1 Warning
+CONFIG_VOLTAGE with Config Bank VCCO  
+The CONFIG_MODE property of current_design specifies a configuration mode (SPIx4) that uses pins in bank 14.  I/O standards used in this bank have a voltage requirement of 2.50.  However, the CONFIG_VOLTAGE for current_design is set to 3.3. If you're using any config pins in this bank, ensure that your configuration voltage is compatible with the I/O standards in banks used by your configuration mode.  Refer to device configuration user guide for more information.    Pins used by config mode: J13 (IO_L1P_T0_D00_MOSI_14), J14 (IO_L1N_T0_D01_DIN_14), K15 (IO_L2P_T0_D02_14), K16 (IO_L2N_T0_D03_14), L15 (IO_L3P_T0_DQS_PUDC_B_14), and L12 (IO_L6P_T0_FCS_B_14)
+Related violations: <none>
+
+REQP-165#1 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (ram_store/ram_inst2/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#2 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (ram_store/ram_inst3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+

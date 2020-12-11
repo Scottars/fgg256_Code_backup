@@ -14,13 +14,1053 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 16820 
-ERROR: [Synth 8-2715] syntax error near UDP0 [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:334]
-ERROR: [Synth 8-2715] syntax error near else [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:338]
-INFO: [Synth 8-2350] module ethernet_test ignored due to previous errors [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:7]
-Failed to read verilog 'C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v'
+INFO: Helper process launched with PID 23384 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 371.945 ; gain = 104.047
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ethernet_test' [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:7]
+	Parameter ram_state_idle bound to: 3'b000 
+	Parameter ram_state_rdy1 bound to: 3'b001 
+	Parameter ram_state_rdy2 bound to: 3'b010 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:16]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:17]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:171]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:172]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:173]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:174]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:175]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:234]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:235]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:237]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:296]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:298]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/synth_1/.Xil/Vivado-12344-DESKTOP-2ULHKU6/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/synth_1/.Xil/Vivado-12344-DESKTOP-2ULHKU6/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'readbcode' [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/readbcode.v:23]
+	Parameter fre bound to: 8'b11001000 
+	Parameter c2ms_low bound to: 350000 - type: integer 
+	Parameter c2ms_high bound to: 450000 - type: integer 
+	Parameter c5ms_low bound to: 950000 - type: integer 
+	Parameter c5ms_high bound to: 1050000 - type: integer 
+	Parameter c8ms_low bound to: 1550000 - type: integer 
+	Parameter c8ms_high bound to: 1650000 - type: integer 
+	Parameter idle bound to: 2'b00 
+	Parameter count bound to: 2'b01 
+	Parameter jstart bound to: 2'b10 
+	Parameter jlow bound to: 199800000 - type: integer 
+	Parameter jhigh bound to: 200200000 - type: integer 
+	Parameter wait1 bound to: 1'b0 
+	Parameter delay1 bound to: 1'b1 
+	Parameter cnt2_negegde bound to: 100000000 - type: integer 
+	Parameter cnt2_posedge bound to: 197999999 - type: integer 
+	Parameter wait2 bound to: 2'b00 
+	Parameter delay2 bound to: 2'b01 
+	Parameter count2 bound to: 2'b10 
+	Parameter delay_lost bound to: 197799999 - type: integer 
+	Parameter cnt3_negedge bound to: 99999999 - type: integer 
+	Parameter cnt3_posedge bound to: 199999999 - type: integer 
+	Parameter wait3 bound to: 2'b00 
+	Parameter ini_sbs bound to: 2'b01 
+	Parameter sbs_plus bound to: 2'b10 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/readbcode.v:35]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/readbcode.v:43]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/readbcode.v:185]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/readbcode.v:195]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/readbcode.v:251]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/readbcode.v:304]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/readbcode.v:306]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/readbcode.v:645]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/readbcode.v:655]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/readbcode.v:656]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/readbcode.v:723]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/readbcode.v:28]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/readbcode.v:29]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/readbcode.v:30]
+INFO: [Synth 8-226] default block is never used [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/readbcode.v:259]
+INFO: [Synth 8-4471] merging register 'bbuf1_reg' into 'bbuf_reg' [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/readbcode.v:101]
+WARNING: [Synth 8-6014] Unused sequential element bbuf1_reg was removed.  [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/readbcode.v:101]
+INFO: [Synth 8-6155] done synthesizing module 'readbcode' (2#1) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/readbcode.v:23]
+INFO: [Synth 8-6157] synthesizing module 'udp' [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/udp.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ipsend' [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ipsend.v:6]
+	Parameter idle bound to: 4'b0000 
+	Parameter start bound to: 4'b0001 
+	Parameter make bound to: 4'b0010 
+	Parameter send55 bound to: 4'b0011 
+	Parameter sendmac bound to: 4'b0100 
+	Parameter sendheader bound to: 4'b0101 
+	Parameter senddata bound to: 4'b0110 
+	Parameter sendcrc bound to: 4'b0111 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ipsend.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'ipsend' (3#1) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ipsend.v:6]
+INFO: [Synth 8-6157] synthesizing module 'crc' [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/crc.v:3]
+	Parameter Tp bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'crc' (4#1) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/crc.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ipreceive' [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ipreceive.v:5]
+	Parameter idle bound to: 4'b0000 
+	Parameter six_55 bound to: 4'b0001 
+	Parameter spd_d5 bound to: 4'b0010 
+	Parameter rx_mac bound to: 4'b0011 
+	Parameter rx_IP_Protocol bound to: 4'b0100 
+	Parameter rx_IP_layer bound to: 4'b0101 
+	Parameter rx_UDP_layer bound to: 4'b0110 
+	Parameter rx_data bound to: 4'b0111 
+	Parameter rx_finish bound to: 4'b1000 
+INFO: [Synth 8-6155] done synthesizing module 'ipreceive' (5#1) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ipreceive.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'udp' (6#1) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/udp.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ltc2290' [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ltc2290.v:21]
+	Parameter idle bound to: 3'b000 
+	Parameter wait1 bound to: 3'b001 
+	Parameter read bound to: 3'b010 
+	Parameter wait2 bound to: 3'b011 
+	Parameter wait3 bound to: 3'b100 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ltc2290.v:82]
+INFO: [Synth 8-6157] synthesizing module 'fixed_to_float' [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/synth_1/.Xil/Vivado-12344-DESKTOP-2ULHKU6/realtime/fixed_to_float_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fixed_to_float' (7#1) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/synth_1/.Xil/Vivado-12344-DESKTOP-2ULHKU6/realtime/fixed_to_float_stub.v:6]
+WARNING: [Synth 8-350] instance 'u1' of module 'fixed_to_float' requires 5 connections, but only 4 given [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ltc2290.v:41]
+WARNING: [Synth 8-350] instance 'u2' of module 'fixed_to_float' requires 5 connections, but only 4 given [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ltc2290.v:47]
+INFO: [Synth 8-6157] synthesizing module 'multiply' [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/synth_1/.Xil/Vivado-12344-DESKTOP-2ULHKU6/realtime/multiply_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'multiply' (8#1) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/synth_1/.Xil/Vivado-12344-DESKTOP-2ULHKU6/realtime/multiply_stub.v:6]
+WARNING: [Synth 8-350] instance 'u3' of module 'multiply' requires 7 connections, but only 4 given [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ltc2290.v:55]
+WARNING: [Synth 8-350] instance 'u4' of module 'multiply' requires 7 connections, but only 4 given [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ltc2290.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'ltc2290' (9#1) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ltc2290.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ram_store' [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ram_store.v:1]
+	Parameter idle bound to: 4'b0000 
+	Parameter pre_judge bound to: 4'b0001 
+	Parameter us_judge bound to: 4'b0010 
+	Parameter write_cha bound to: 4'b0011 
+	Parameter write_usa bound to: 4'b0100 
+	Parameter write_chb bound to: 4'b0101 
+	Parameter write_usb bound to: 4'b0110 
+	Parameter wait_to_100 bound to: 4'b0111 
+	Parameter write_cha_head1 bound to: 4'b1000 
+	Parameter write_cha_head2 bound to: 4'b1001 
+	Parameter write_chb_head1 bound to: 4'b1010 
+	Parameter write_chb_head2 bound to: 4'b1011 
+	Parameter en_eth bound to: 4'b1100 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ram_store.v:45]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ram_store.v:46]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ram_store.v:47]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ram_store.v:48]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ram_store.v:49]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ram_store.v:87]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ram_store.v:88]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ram_store.v:89]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ram_store.v:92]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ram_store.v:93]
+INFO: [Synth 8-6157] synthesizing module 'ram' [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/synth_1/.Xil/Vivado-12344-DESKTOP-2ULHKU6/realtime/ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ram' (10#1) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/synth_1/.Xil/Vivado-12344-DESKTOP-2ULHKU6/realtime/ram_stub.v:6]
+WARNING: [Synth 8-689] width (10) of port connection 'addra' does not match port width (9) of module 'ram' [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ram_store.v:62]
+WARNING: [Synth 8-689] width (10) of port connection 'addrb' does not match port width (9) of module 'ram' [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ram_store.v:66]
+WARNING: [Synth 8-689] width (10) of port connection 'addra' does not match port width (9) of module 'ram' [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ram_store.v:73]
+WARNING: [Synth 8-689] width (10) of port connection 'addrb' does not match port width (9) of module 'ram' [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ram_store.v:77]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ram_store.v:97]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ram_inst3'. This will prevent further optimization [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ram_store.v:59]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ram_inst2'. This will prevent further optimization [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ram_store.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'ram_store' (11#1) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ram_store.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:326]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ltc2290'. This will prevent further optimization [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:238]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ram_store'. This will prevent further optimization [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:281]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u1'. This will prevent further optimization [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:177]
+WARNING: [Synth 8-6014] Unused sequential element ad_clk_i_reg was removed.  [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:212]
+WARNING: [Synth 8-6014] Unused sequential element clk_1M_reg was removed.  [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:215]
+WARNING: [Synth 8-3848] Net e_mdc in module/entity ethernet_test does not have driver. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ethernet_test' (12#1) [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ethernet_test.v:7]
+WARNING: [Synth 8-3917] design ethernet_test has port e_reset driven by constant 1
+WARNING: [Synth 8-3331] design ethernet_test has unconnected port e_mdc
+WARNING: [Synth 8-3331] design ethernet_test has unconnected port e_mdio
+WARNING: [Synth 8-3331] design ethernet_test has unconnected port e_rxer
+WARNING: [Synth 8-3331] design ethernet_test has unconnected port e_txc
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 435.762 ; gain = 167.863
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 435.762 ; gain = 167.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 435.762 ; gain = 167.863
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'pll_unit'
+Finished Parsing XDC File [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'pll_unit'
+Parsing XDC File [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/multiply/multiply/multiply_in_context.xdc] for cell 'ltc2290/u3'
+Finished Parsing XDC File [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/multiply/multiply/multiply_in_context.xdc] for cell 'ltc2290/u3'
+Parsing XDC File [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/multiply/multiply/multiply_in_context.xdc] for cell 'ltc2290/u4'
+Finished Parsing XDC File [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/multiply/multiply/multiply_in_context.xdc] for cell 'ltc2290/u4'
+Parsing XDC File [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/fixed_to_float/fixed_to_float/fixed_to_float_in_context.xdc] for cell 'ltc2290/u1'
+Finished Parsing XDC File [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/fixed_to_float/fixed_to_float/fixed_to_float_in_context.xdc] for cell 'ltc2290/u1'
+Parsing XDC File [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/fixed_to_float/fixed_to_float/fixed_to_float_in_context.xdc] for cell 'ltc2290/u2'
+Finished Parsing XDC File [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/fixed_to_float/fixed_to_float/fixed_to_float_in_context.xdc] for cell 'ltc2290/u2'
+Parsing XDC File [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/ram/ram/ram_in_context.xdc] for cell 'ram_store/ram_inst3'
+Finished Parsing XDC File [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/ram/ram/ram_in_context.xdc] for cell 'ram_store/ram_inst3'
+Parsing XDC File [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/ram/ram/ram_in_context.xdc] for cell 'ram_store/ram_inst2'
+Finished Parsing XDC File [c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/ram/ram/ram_in_context.xdc] for cell 'ram_store/ram_inst2'
+Parsing XDC File [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc]
+WARNING: [Vivado 12-507] No nets matched 'e_gtxc_OBUF'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:73]
+WARNING: [Vivado 12-507] No nets matched 'e_gtxc'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'e_txer'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'e_txer'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'e_txer'. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc:95]
+Finished Parsing XDC File [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/ethernet_test_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/constrs_1/new/udp.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ethernet_test_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ethernet_test_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 790.836 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 790.836 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 790.836 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 790.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:40 . Memory (MB): peak = 790.836 ; gain = 522.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tftg256-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:40 . Memory (MB): peak = 790.836 ; gain = 522.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk_50M. (constraint file  c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk_50M. (constraint file  c:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 7).
+Applied set_property DONT_TOUCH = true for pll_unit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ltc2290/u3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ltc2290/u4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ltc2290/u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ltc2290/u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ram_store/ram_inst2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ram_store/ram_inst3. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:41 . Memory (MB): peak = 790.836 ; gain = 522.938
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'jstate_reg' in module 'readbcode'
+.p 4
+.s 4
+	 Default wait2 
+	 wait2 delay2 
+	 delay2 count2 
+	 count2 wait2 
+.e
+INFO: [Synth 8-802] inferred FSM for state register 'dstate_reg' in module 'readbcode'
+INFO: [Synth 8-802] inferred FSM for state register 'sbs_state_reg' in module 'readbcode'
+INFO: [Synth 8-5545] ROM "jstate" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "d_pps" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt3" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "sbs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lost_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lost_switch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lost_switch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cnt1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "jstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "dstate" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "sbs_reg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sbs_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ip_header" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "txer0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "txen" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "crcen" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "crcre" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "j" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_rd_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "check_buffer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "preamble" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mac_addr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element i_reg_rep was removed.  [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ipsend.v:124]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mymac_reg' and it is trimmed from '96' to '88' bits. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ipreceive.v:94]
+WARNING: [Synth 8-3936] Found unconnected internal register 'myIP_Prtcl_reg' and it is trimmed from '16' to '8' bits. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ipreceive.v:113]
+WARNING: [Synth 8-3936] Found unconnected internal register 'myIP_layer_reg' and it is trimmed from '160' to '152' bits. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ipreceive.v:130]
+WARNING: [Synth 8-3936] Found unconnected internal register 'myUDP_layer_reg' and it is trimmed from '64' to '56' bits. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ipreceive.v:148]
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'ipreceive'
+INFO: [Synth 8-5546] ROM "rx_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "data_receive" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_total_length" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "rx_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+.p 6
+.s 6
+	 Default idle 
+	 idle wait1 
+	 wait1 read 
+	 read wait2 
+	 wait2 wait3 
+	 wait3 idle 
+.e
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ltc2290'
+INFO: [Synth 8-5546] ROM "store_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "store_en0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ram_store.v:62]
+.p 16
+.s 14
+	 Default Default 
+	 idle pre_judge 
+	 pre_judge write_cha 
+	 pre_judge us_judge 
+	 us_judge write_cha 
+	 write_cha write_usa 
+	 write_usa write_chb 
+	 write_chb write_usb 
+	 write_usb wait_to_100 
+	 wait_to_100 write_cha_head1 
+	 wait_to_100 idle 
+	 write_cha_head1 write_cha_head2 
+	 write_cha_head2 write_chb_head1 
+	 write_chb_head1 write_chb_head2 
+	 write_chb_head2 en_eth 
+	 en_eth idle 
+.e
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ram_store'
+INFO: [Synth 8-5546] ROM "wr_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ts_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ts_flag0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ram_rdy" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "user_led" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "user_led" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "ram_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ram_switch_i" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   count |                               01 |                               01
+                  jstart |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'jstate_reg' using encoding 'sequential' in module 'readbcode'
+INFO: [Synth 8-6159] Found Keep on FSM register 'dstate_reg' in module 'readbcode', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                   wait2 |                               00 |                               00
+                  delay2 |                               01 |                               01
+                  count2 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   wait3 |                              001 |                               00
+                 ini_sbs |                              010 |                               01
+                sbs_plus |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sbs_state_reg' using encoding 'one-hot' in module 'readbcode'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+                  six_55 |                             0001 |                             0001
+                  spd_d5 |                             0010 |                             0010
+                  rx_mac |                             0011 |                             0011
+          rx_IP_Protocol |                             0100 |                             0100
+             rx_IP_layer |                             0101 |                             0101
+            rx_UDP_layer |                             0110 |                             0110
+                 rx_data |                             0111 |                             0111
+               rx_finish |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'ipreceive'
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'ltc2290', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    idle |                              000 |                              000
+                   wait1 |                              001 |                              001
+                    read |                              010 |                              010
+                   wait2 |                              011 |                              011
+                   wait3 |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'ram_store', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    idle |                             0000 |                             0000
+               pre_judge |                             0001 |                             0001
+                us_judge |                             0010 |                             0010
+               write_cha |                             0011 |                             0011
+               write_usa |                             0100 |                             0100
+               write_chb |                             0101 |                             0101
+               write_usb |                             0110 |                             0110
+             wait_to_100 |                             0111 |                             0111
+         write_cha_head1 |                             1000 |                             1000
+         write_cha_head2 |                             1001 |                             1001
+         write_chb_head1 |                             1010 |                             1010
+         write_chb_head2 |                             1011 |                             1011
+                  en_eth |                             1100 |                             1100
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:45 . Memory (MB): peak = 790.836 ; gain = 522.938
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 9     
+	   2 Input     20 Bit       Adders := 1     
+	  10 Input     20 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 3     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 6     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
+	   3 Input      1 Bit         XORs := 6     
+	   6 Input      1 Bit         XORs := 7     
+	   8 Input      1 Bit         XORs := 1     
+	   5 Input      1 Bit         XORs := 4     
+	   7 Input      1 Bit         XORs := 7     
+	  10 Input      1 Bit         XORs := 2     
+	   9 Input      1 Bit         XORs := 3     
+	  12 Input      1 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	              160 Bit    Registers := 1     
+	              152 Bit    Registers := 1     
+	               88 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               56 Bit    Registers := 1     
+	               48 Bit    Registers := 2     
+	               32 Bit    Registers := 27    
+	               20 Bit    Registers := 1     
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 4     
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 6     
+	                8 Bit    Registers := 6     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 39    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 19    
+	   3 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 3     
+	   8 Input     32 Bit        Muxes := 2     
+	   9 Input     32 Bit        Muxes := 1     
+	  14 Input     32 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 3     
+	  18 Input     17 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   3 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 4     
+	   9 Input     16 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 4     
+	   8 Input     10 Bit        Muxes := 1     
+	   9 Input     10 Bit        Muxes := 1     
+	  14 Input     10 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 10    
+	   4 Input      8 Bit        Muxes := 5     
+	   9 Input      8 Bit        Muxes := 1     
+	  15 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 11    
+	   8 Input      5 Bit        Muxes := 1     
+	   9 Input      5 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 22    
+	   4 Input      4 Bit        Muxes := 2     
+	   9 Input      4 Bit        Muxes := 2     
+	  14 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 8     
+	   4 Input      3 Bit        Muxes := 2     
+	   9 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 10    
+	   4 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 66    
+	   3 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 16    
+	   5 Input      1 Bit        Muxes := 2     
+	  18 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 13    
+	   9 Input      1 Bit        Muxes := 21    
+	   6 Input      1 Bit        Muxes := 3     
+	  14 Input      1 Bit        Muxes := 11    
+	  13 Input      1 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ethernet_test 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 8     
+Module readbcode 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 7     
+	               20 Bit    Registers := 1     
+	               17 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 22    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   3 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 3     
+	  18 Input     17 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   3 Input     17 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+	   3 Input      1 Bit        Muxes := 9     
+	   4 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 1     
+Module ipsend 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	  10 Input     20 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 9     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   8 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 1     
+	   8 Input     10 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 6     
+	  15 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 4     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   8 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 10    
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 22    
+	   4 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 13    
+Module crc 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
+	   3 Input      1 Bit         XORs := 6     
+	   6 Input      1 Bit         XORs := 7     
+	   8 Input      1 Bit         XORs := 1     
+	   5 Input      1 Bit         XORs := 4     
+	   7 Input      1 Bit         XORs := 7     
+	  10 Input      1 Bit         XORs := 2     
+	   9 Input      1 Bit         XORs := 3     
+	  12 Input      1 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+Module ipreceive 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	              160 Bit    Registers := 1     
+	              152 Bit    Registers := 1     
+	               88 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               56 Bit    Registers := 1     
+	               48 Bit    Registers := 2     
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 4     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   9 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   9 Input     16 Bit        Muxes := 1     
+	   9 Input     10 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   9 Input      5 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 9     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 21    
+Module ltc2290 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               12 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+Module ram_store 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               10 Bit    Registers := 4     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	  14 Input     32 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	  14 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	  14 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 4     
+	  13 Input      1 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "jstate" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt3" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "j" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "check_buffer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_rd_addr" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3936] Found unconnected internal register 'ipreceive_inst/myUDP_layer_reg' and it is trimmed from '56' to '48' bits. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ipreceive.v:148]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ipreceive_inst/IP_layer_reg' and it is trimmed from '160' to '144' bits. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ipreceive.v:134]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ipreceive_inst/myIP_layer_reg' and it is trimmed from '152' to '144' bits. [C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.srcs/sources_1/new/ipreceive.v:130]
+INFO: [Synth 8-5546] ROM "i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "store_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ts_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wr_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "user_led" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "user_led" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design ethernet_test has port e_reset driven by constant 1
+WARNING: [Synth 8-3331] design ram_store has unconnected port eth_rd_addr[9]
+WARNING: [Synth 8-3331] design ethernet_test has unconnected port e_mdc
+WARNING: [Synth 8-3331] design ethernet_test has unconnected port e_mdio
+WARNING: [Synth 8-3331] design ethernet_test has unconnected port e_rxer
+WARNING: [Synth 8-3331] design ethernet_test has unconnected port e_txc
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/check_buffer_reg[24]' (FDE_1) to 'u1/ipsend_inst/check_buffer_reg[25]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/check_buffer_reg[25]' (FDE_1) to 'u1/ipsend_inst/check_buffer_reg[26]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/check_buffer_reg[26]' (FDE_1) to 'u1/ipsend_inst/check_buffer_reg[27]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/check_buffer_reg[27]' (FDE_1) to 'u1/ipsend_inst/check_buffer_reg[28]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/check_buffer_reg[28]' (FDE_1) to 'u1/ipsend_inst/check_buffer_reg[29]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/check_buffer_reg[29]' (FDE_1) to 'u1/ipsend_inst/check_buffer_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/check_buffer_reg[30]' (FDE_1) to 'u1/ipsend_inst/check_buffer_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/check_buffer_reg[31]' (FDE_1) to 'u1/ipsend_inst/check_buffer_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/check_buffer_reg[20]' (FDE_1) to 'u1/ipsend_inst/check_buffer_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/check_buffer_reg[21]' (FDE_1) to 'u1/ipsend_inst/check_buffer_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/check_buffer_reg[22]' (FDE_1) to 'u1/ipsend_inst/check_buffer_reg[23]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1/ipsend_inst/\check_buffer_reg[23] )
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[3][24]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[2][24]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[0][24]' (FDE_1) to 'u1/ipsend_inst/ip_header_reg[0][26]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[5][24]' (FDSE_1) to 'u1/ipsend_inst/ip_header_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[4][24]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[3][16]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[2][16]' (FDSE_1) to 'u1/ipsend_inst/ip_header_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[0][16]' (FDE_1) to 'u1/ipsend_inst/ip_header_reg[0][17]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[5][16]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[4][16]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[3][8]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[1][8]' (FDE_1) to 'u1/ipsend_inst/ip_header_reg[0][17]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[5][8]' (FDSE_1) to 'u1/ipsend_inst/ip_header_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[4][8]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[3][0]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[1][0]' (FDE_1) to 'u1/ipsend_inst/ip_header_reg[0][17]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[5][0]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[4][0]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[6][8]' (FDE_1) to 'u1/ipsend_inst/ip_header_reg[0][17]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[6][0]' (FDE_1) to 'u1/ipsend_inst/ip_header_reg[0][17]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[3][25]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[2][25]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[0][25]' (FDE_1) to 'u1/ipsend_inst/ip_header_reg[0][17]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[5][25]' (FDSE_1) to 'u1/ipsend_inst/ip_header_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[4][25]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[3][17]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[2][17]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[0][17]' (FDE_1) to 'u1/ipsend_inst/ip_header_reg[0][18]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[5][17]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[4][17]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[3][9]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[1][9]' (FDE_1) to 'u1/ipsend_inst/ip_header_reg[0][18]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[5][9]' (FDSE_1) to 'u1/ipsend_inst/ip_header_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[4][9]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[3][1]' (FDSE_1) to 'u1/ipsend_inst/ip_header_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[1][1]' (FDE_1) to 'u1/ipsend_inst/ip_header_reg[0][18]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[5][1]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[4][1]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[6][9]' (FDE_1) to 'u1/ipsend_inst/ip_header_reg[0][18]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[6][1]' (FDE_1) to 'u1/ipsend_inst/ip_header_reg[0][18]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[3][26]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[2][26]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[0][26]' (FDE_1) to 'u1/ipsend_inst/ip_header_reg[0][30]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[5][26]' (FDSE_1) to 'u1/ipsend_inst/ip_header_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[4][26]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[3][18]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[2][18]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[0][18]' (FDE_1) to 'u1/ipsend_inst/ip_header_reg[0][19]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[5][18]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[4][18]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[3][10]' (FDSE_1) to 'u1/ipsend_inst/ip_header_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[1][10]' (FDE_1) to 'u1/ipsend_inst/ip_header_reg[0][19]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[5][10]' (FDSE_1) to 'u1/ipsend_inst/ip_header_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[4][10]' (FDSE_1) to 'u1/ipsend_inst/ip_header_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[3][2]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][6]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[1][2]' (FDE_1) to 'u1/ipsend_inst/ip_header_reg[0][19]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[5][2]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][6]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[4][2]' (FDSE_1) to 'u1/ipsend_inst/ip_header_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[6][10]' (FDE_1) to 'u1/ipsend_inst/ip_header_reg[0][19]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[6][2]' (FDE_1) to 'u1/ipsend_inst/ip_header_reg[0][19]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[3][27]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][6]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[2][27]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][6]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[0][27]' (FDE_1) to 'u1/ipsend_inst/ip_header_reg[0][19]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[5][27]' (FDSE_1) to 'u1/ipsend_inst/ip_header_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[4][27]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][6]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[3][19]' (FDSE_1) to 'u1/ipsend_inst/ip_header_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[2][19]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][6]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[0][19]' (FDE_1) to 'u1/ipsend_inst/ip_header_reg[0][20]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[5][19]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][6]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[4][19]' (FDSE_1) to 'u1/ipsend_inst/ip_header_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[3][11]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][6]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[1][11]' (FDE_1) to 'u1/ipsend_inst/ip_header_reg[0][20]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[5][11]' (FDSE_1) to 'u1/ipsend_inst/ip_header_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[4][11]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][6]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[3][3]' (FDSE_1) to 'u1/ipsend_inst/ip_header_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[1][3]' (FDE_1) to 'u1/ipsend_inst/ip_header_reg[0][20]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[5][3]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][6]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[4][3]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][6]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[6][11]' (FDE_1) to 'u1/ipsend_inst/ip_header_reg[0][20]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[6][3]' (FDE_1) to 'u1/ipsend_inst/ip_header_reg[0][20]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[3][28]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][6]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[2][28]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][6]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[0][28]' (FDE_1) to 'u1/ipsend_inst/ip_header_reg[0][20]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[5][28]' (FDSE_1) to 'u1/ipsend_inst/ip_header_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[4][28]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][6]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[3][20]' (FDRE_1) to 'u1/ipsend_inst/ip_header_reg[3][6]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[2][20]' (FDSE_1) to 'u1/ipsend_inst/ip_header_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[0][20]' (FDE_1) to 'u1/ipsend_inst/ip_header_reg[0][21]'
+INFO: [Synth 8-3886] merging instance 'u1/ipsend_inst/ip_header_reg[5][20]' (FDSE_1) to 'u1/ipsend_inst/ip_header_reg[3][4]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1/ipsend_inst/\ip_header_reg[1][14] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1/ipsend_inst/\ip_header_reg[5][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1/ipsend_inst/\ip_header_reg[4][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1/ipsend_inst/\ip_header_reg[6][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ram_store/ts_flag_reg)
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:01:00 . Memory (MB): peak = 790.836 ; gain = 522.938
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'pll_unit/clk_out1' to pin 'pll_unit/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'pll_unit/clk_out2' to pin 'pll_unit/bbstub_clk_out2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'pll_unit/clk_out3' to pin 'pll_unit/bbstub_clk_out3/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'pll_unit/clk_out4' to pin 'pll_unit/bbstub_clk_out4/O'
+INFO: [Synth 8-5819] Moved 4 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:01:13 . Memory (MB): peak = 790.836 ; gain = 522.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:14 . Memory (MB): peak = 797.496 ; gain = 529.598
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:01:16 . Memory (MB): peak = 801.250 ; gain = 533.352
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u3 has unconnected pin s_axis_a_tvalid
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u3 has unconnected pin s_axis_b_tvalid
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u4 has unconnected pin s_axis_a_tvalid
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u4 has unconnected pin s_axis_b_tvalid
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:18 . Memory (MB): peak = 801.250 ; gain = 533.352
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:01:18 . Memory (MB): peak = 801.250 ; gain = 533.352
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:00 ; elapsed = 00:01:19 . Memory (MB): peak = 801.250 ; gain = 533.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:00 ; elapsed = 00:01:19 . Memory (MB): peak = 801.250 ; gain = 533.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:19 . Memory (MB): peak = 801.250 ; gain = 533.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:19 . Memory (MB): peak = 801.250 ; gain = 533.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                           | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|udp         | ipreceive_inst/mymac_reg[47]       | 6      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|udp         | ipreceive_inst/myIP_layer_reg[127] | 16     | 8     | NO           | NO                 | YES               | 8      | 0       | 
++------------+------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |fixed_to_float |         2|
+|2     |multiply       |         2|
+|3     |ram            |         2|
+|4     |clk_wiz_0      |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |clk_wiz_0         |     1|
+|2     |fixed_to_float    |     1|
+|3     |fixed_to_float__2 |     1|
+|4     |multiply          |     1|
+|5     |multiply__2       |     1|
+|6     |ram               |     1|
+|7     |ram__2            |     1|
+|8     |BUFG              |     1|
+|9     |CARRY4            |   125|
+|10    |LUT1              |    62|
+|11    |LUT2              |   171|
+|12    |LUT3              |   131|
+|13    |LUT4              |   226|
+|14    |LUT5              |   171|
+|15    |LUT6              |   424|
+|16    |SRL16E            |    16|
+|17    |FDPE              |    32|
+|18    |FDRE              |  1010|
+|19    |FDSE              |    41|
+|20    |FD_1              |     4|
+|21    |IBUF              |    35|
+|22    |OBUF              |    15|
+|23    |OBUFT             |     1|
++------+------------------+------+
+
+Report Instance Areas: 
++------+-------------------+----------+------+
+|      |Instance           |Module    |Cells |
++------+-------------------+----------+------+
+|1     |top                |          |  2665|
+|2     |  u3               |readbcode |   739|
+|3     |  u1               |udp       |  1007|
+|4     |    ipsend_inst    |ipsend    |   520|
+|5     |    crc_inst       |crc       |    73|
+|6     |    ipreceive_inst |ipreceive |   414|
+|7     |  ltc2290          |ltc2290   |   254|
+|8     |  ram_store        |ram_store |   460|
++------+-------------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:19 . Memory (MB): peak = 801.250 ; gain = 533.352
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 4 critical warnings and 14 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:59 . Memory (MB): peak = 801.250 ; gain = 178.277
+Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:19 . Memory (MB): peak = 801.250 ; gain = 533.352
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 129 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 801.250 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  FD_1 => FDRE (inverted pins: C): 4 instances
+
 INFO: [Common 17-83] Releasing license: Synthesis
-3 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
-synth_design failed
-ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
-INFO: [Common 17-206] Exiting Vivado at Mon Dec  7 16:00:55 2020...
+270 Infos, 37 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:01:23 . Memory (MB): peak = 801.250 ; gain = 544.820
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 801.250 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Scottar/Desktop/slave_relateive/fgg256_plus_ethernet/hi_time_sample_board.runs/synth_1/ethernet_test.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ethernet_test_utilization_synth.rpt -pb ethernet_test_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  8 13:15:21 2020...

@@ -1,0 +1,131 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Dec  8 13:17:09 2020
+| Host         : DESKTOP-2ULHKU6 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file ethernet_test_control_sets_placed.rpt
+| Design       : ethernet_test
+| Device       : xc7a35t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    57 |
+| Unused register locations in slices containing registers |   180 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            4 |
+|      4 |            6 |
+|      5 |            4 |
+|      6 |            1 |
+|      7 |            4 |
+|      8 |            1 |
+|      9 |            3 |
+|     10 |            1 |
+|     11 |            2 |
+|     12 |            3 |
+|    16+ |           28 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             469 |          137 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             203 |           55 |
+| Yes          | No                    | No                     |             328 |          125 |
+| Yes          | No                    | Yes                    |              32 |           12 |
+| Yes          | Yes                   | No                     |             308 |           90 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+-------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+----------------+
+|       Clock Signal      |               Enable Signal               |                                              Set/Reset Signal                                             | Slice Load Count | Bel Load Count |
++-------------------------+-------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+----------------+
+| ~e_gtxc_OBUF_BUFG       | u1/ipsend_inst/txen_i_1_n_0               |                                                                                                           |                1 |              1 |
+|  e_gtxc_OBUF_BUFG       |                                           | ltc2290/u3/U0/i_synth/MULT.OP/EXP/STATE_DELAY/i_pipe/state_up[0]                                          |                1 |              1 |
+|  pll_unit/inst/clk_out1 | timer_led[26]_i_1_n_0                     | user_led_i_1_n_0                                                                                          |                1 |              1 |
+|  e_gtxc_OBUF_BUFG       |                                           | ltc2290/u4/U0/i_synth/MULT.OP/EXP/STATE_DELAY/i_pipe/state_up[0]                                          |                1 |              1 |
+|  e_gtxc_OBUF_BUFG       | ram_store/state[3]_i_1_n_0                |                                                                                                           |                2 |              4 |
+|  e_gtxc_OBUF_BUFG       |                                           | ltc2290/u2/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/LZE/ZERO_DET_CC_1/CARRYS_OUT[1]                                |                1 |              4 |
+|  e_gtxc_OBUF_BUFG       |                                           | ltc2290/u2/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/LZE/ZERO_DET_CC_1/CHAIN_GEN[0].CARRYS_DEL.NEED_DEL.CARRYS_FD_0 |                1 |              4 |
+|  e_gtxc_OBUF_BUFG       |                                           | ltc2290/u1/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/LZE/ZERO_DET_CC_1/CARRYS_OUT[1]                                |                2 |              4 |
+|  e_gtxc_OBUF_BUFG       |                                           | ltc2290/u1/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/LZE/ZERO_DET_CC_1/CHAIN_GEN[0].CARRYS_DEL.NEED_DEL.CARRYS_FD_0 |                1 |              4 |
+| ~e_gtxc_OBUF_BUFG       | u1/ipsend_inst/check_buffer[19]_i_1_n_0   |                                                                                                           |                2 |              4 |
+|  e_gtxc_OBUF_BUFG       | ram_switch_i[3]_i_1_n_0                   |                                                                                                           |                3 |              5 |
+|  e_gtxc_OBUF_BUFG       | ram_store/ts_cnt[7]_i_2_n_0               | ram_store/ts_cnt[7]_i_1_n_0                                                                               |                2 |              5 |
+|  e_gtxc_OBUF_BUFG       | ltc2290/i[4]_i_1_n_0                      |                                                                                                           |                3 |              5 |
+| ~e_gtxc_OBUF_BUFG       | u1/ipsend_inst/j[4]_i_1_n_0               |                                                                                                           |                3 |              5 |
+|  pll_unit/inst/clk_out1 |                                           | u3/lost_cnt[6]_i_1_n_0                                                                                    |                4 |              6 |
+|  pll_unit/inst/clk_out1 | u3/num                                    | u3/num[6]_i_1_n_0                                                                                         |                2 |              7 |
+| ~e_gtxc_OBUF_BUFG       |                                           |                                                                                                           |                5 |              7 |
+|  e_gtxc_OBUF_BUFG       |                                           | ltc2290/u3/U0/i_synth/MULT.OP/EXP/STATE_DEC_DELAY/i_pipe/Q[1]                                             |                1 |              7 |
+|  e_gtxc_OBUF_BUFG       |                                           | ltc2290/u4/U0/i_synth/MULT.OP/EXP/STATE_DEC_DELAY/i_pipe/Q[1]                                             |                1 |              7 |
+|  e_gtxc_OBUF_BUFG       | ram_store/cnt[7]_i_1_n_0                  |                                                                                                           |                4 |              8 |
+|  pll_unit/inst/clk_out1 |                                           | u3/prise                                                                                                  |                4 |              9 |
+|  e_gtxc_OBUF_BUFG       | ram_store/wr_addr[8]_i_1_n_0              |                                                                                                           |                7 |              9 |
+| ~e_gtxc_OBUF_BUFG       | u1/ipsend_inst/i[4]_i_1_n_0               |                                                                                                           |                3 |              9 |
+| ~e_gtxc_OBUF_BUFG       | u1/ipsend_inst/ram_rd_addr[9]_i_1_n_0     |                                                                                                           |                4 |             10 |
+|  e_gtxc_OBUF_BUFG       |                                           | ltc2290/u2/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/ZERO_DELAY/i_pipe/op_state[0]                              |                2 |             11 |
+|  e_gtxc_OBUF_BUFG       |                                           | ltc2290/u1/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/ZERO_DELAY/i_pipe/op_state[0]                              |                2 |             11 |
+|  pll_unit/inst/clk_out1 |                                           | timer_led[26]_i_1_n_0                                                                                     |                4 |             12 |
+|  e_gtxc_OBUF_BUFG       | ram_store/ram_rdy_i_1_n_0                 |                                                                                                           |                5 |             12 |
+|  pll_unit/inst/clk_out1 | u3/cnt3[31]_i_2_n_0                       | u3/cnt3[26]_i_1_n_0                                                                                       |                6 |             12 |
+| ~e_gtxc_OBUF_BUFG       | u1/ipsend_inst/dataout[7]_i_2_n_0         | u1/ipsend_inst/tx_data_counter                                                                            |                6 |             16 |
+| ~e_gtxc_OBUF_BUFG       | u1/ipsend_inst/check_buffer[15]_i_1_n_0   |                                                                                                           |                5 |             16 |
+| ~e_gtxc_OBUF_BUFG       | u1/ipsend_inst/tx_data_counter[0]_i_1_n_0 | u1/ipsend_inst/tx_data_counter                                                                            |                4 |             16 |
+| ~e_gtxc_OBUF_BUFG       | u1/ipsend_inst/ip_header[2][15]_i_1_n_0   | u1/ipsend_inst/ip_header[6][31]_i_1_n_0                                                                   |                6 |             16 |
+|  pll_unit/inst/clk_out1 | u3/sbs[16]_i_1_n_0                        |                                                                                                           |                6 |             17 |
+|  pll_unit/inst/clk_out1 | u3/sbs_reg[16]_i_1_n_0                    |                                                                                                           |                9 |             17 |
+|  pll_unit/inst/clk_out1 | u3/cnt_us[19]_i_1_n_0                     | u3/prise                                                                                                  |                5 |             18 |
+|  pll_unit/inst/clk_out1 |                                           | timer_led[31]_i_1_n_0                                                                                     |                6 |             19 |
+|  e_gtxc_OBUF_BUFG       | ram_store/reg_us[31]_i_2_n_0              | ram_store/reg_us[31]_i_1_n_0                                                                              |                5 |             20 |
+|  pll_unit/inst/clk_out1 | u3/cnt3[31]_i_2_n_0                       | u3/cnt3[31]_i_1_n_0                                                                                       |                7 |             20 |
+|  e_gtxc_OBUF_BUFG       | ram_store/cha_addr[9]_i_2_n_0             | ram_store/cha_addr[9]_i_1_n_0                                                                             |                8 |             20 |
+|  e_gtxc_OBUF_BUFG       |                                           | ltc2290/u4/U0/i_synth/MULT.OP/EXP/STATE_DEC_DELAY/i_pipe/Q[3]                                             |                5 |             22 |
+|  e_gtxc_OBUF_BUFG       | ltc2290/fixed_regb                        |                                                                                                           |                6 |             22 |
+|  e_gtxc_OBUF_BUFG       |                                           | ltc2290/u3/U0/i_synth/MULT.OP/EXP/STATE_DEC_DELAY/i_pipe/Q[3]                                             |                4 |             22 |
+| ~e_gtxc_OBUF_BUFG       | u1/ipsend_inst/ip_header[6][31]_i_1_n_0   |                                                                                                           |               11 |             24 |
+|  pll_unit/inst/clk_out1 |                                           | u3/clear                                                                                                  |                7 |             27 |
+|  e_gtxc_OBUF_BUFG       | ram_switch_i[3]_i_1_n_0                   | ram_switch_i[31]_i_1_n_0                                                                                  |                8 |             29 |
+|  pll_unit/inst/clk_out1 | u3/jcnt                                   | u3/jcnt[31]_i_1_n_0                                                                                       |                9 |             32 |
+|  pll_unit/inst/clk_out1 | u3/cnt20                                  | u3/cnt2[31]_i_1_n_0                                                                                       |                8 |             32 |
+|  e_gtxc_OBUF_BUFG       | ram_store/wr_data[31]_i_1_n_0             |                                                                                                           |               14 |             32 |
+|  pll_unit/inst/clk_out1 |                                           | u3/cnt[31]_i_1_n_0                                                                                        |                8 |             32 |
+|  pll_unit/inst/clk_out1 | u3/head_rise                              |                                                                                                           |                8 |             32 |
+|  e_gtxc_OBUF_BUFG       | u1/ipsend_inst/crcen                      | u1/ipsend_inst/crcre                                                                                      |               12 |             32 |
+| ~e_gtxc_OBUF_BUFG       | u1/ipsend_inst/datain_reg[31]_i_1_n_0     |                                                                                                           |               13 |             32 |
+|  pll_unit/inst/clk_out1 |                                           |                                                                                                           |               20 |             33 |
+|  e_gtxc_OBUF_BUFG       | ltc2290/cha_data[31]_i_1_n_0              |                                                                                                           |               16 |             64 |
+|  pll_unit/inst/clk_out1 | u3/width2[31]_i_2_n_0                     | u3/p_0_in__1                                                                                              |               13 |             64 |
+|  e_gtxc_OBUF_BUFG       |                                           |                                                                                                           |              112 |            463 |
++-------------------------+-------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+

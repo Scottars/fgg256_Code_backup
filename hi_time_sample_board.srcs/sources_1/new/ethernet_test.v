@@ -89,7 +89,7 @@ readbcode u3(
 .clk_1m(clk_1m)//读B码得到的17位秒码
 );
 
-/////b code simulationm 
+///b code simulationm 
 //输出一个cnt_us 输出一个 sbs
 //reg [19:0] cnt_us;
 //reg [16:0] sbs;
@@ -331,7 +331,7 @@ ram_state_idle:begin
         ram_state <=ram_state_idle;
 end
 ram_state_rdy1:begin // 这个是等待以太网再次进入idle 
-    if(ram_switch_i==(tx_total_length+10UDP0))begin
+    if(ram_switch_i==(tx_total_length+100))begin
          ram_switch_i <= 0;
         ram_state <= ram_state_rdy2;
     end

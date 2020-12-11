@@ -26,7 +26,7 @@ input clk;//200M
 (*mark_debug="true"*)input bcode0;//输入B码
 input rst_n;//复位
 (*mark_debug="true"*)output reg [16:0] sbs_reg;//17位sbs码
-(*mark_debug="true"*)output reg [19:0] cnt_us;
+(*mark_debug="true"*)output reg [19:0] cnt_us=20'd999999;
 (*mark_debug="true"*)output reg clk_1m;
 output reg test;
 
@@ -720,7 +720,7 @@ end
 
 
 //(*mark_debug="true"*)reg [19:0] cnt_us;
-(*mark_debug="true"*)reg [7:0] cnt1;
+(*mark_debug="true"*)reg [7:0] cnt1=fre-1;
 //reg clk_1m;//TO AD Sampling
 //parameter fre=8'd20;//fre=时钟频率/1M
 always @(posedge clk)
